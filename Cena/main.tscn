@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://dahggvvcon4lo"]
 
-[ext_resource type="PackedScene" uid="uid://muedv0cci7xi" path="res://Entities/personagem.tscn" id="1_nnmrw"]
+[ext_resource type="PackedScene" uid="uid://muedv0cci7xi" path="res://Entities/player.tscn" id="1_nnmrw"]
 [ext_resource type="TileSet" uid="uid://bf1rabfwc81x2" path="res://Tiles/terrain.tres" id="2_u1akp"]
 [ext_resource type="TileSet" uid="uid://gwcm4isqst2p" path="res://Tiles/decoration.tres" id="3_skhdm"]
 
