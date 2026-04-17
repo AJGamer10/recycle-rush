@@ -147,7 +147,7 @@ region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
 
 [node name="Player" parent="." unique_id=600485038 instance=ExtResource("1_m0u81")]
-position = Vector2(691, 154)
+position = Vector2(14, 174)
 
 [node name="Camera" parent="." unique_id=2051687981 instance=ExtResource("9_6okxi")]
 position = Vector2(54, 116)
@@ -156,9 +156,10 @@ limit_right = 780
 
 [node name="LevelEnd" parent="." unique_id=2011986027 instance=ExtResource("12_2kvdh")]
 position = Vector2(784, 178)
+next_level = "tropic"
 
 [node name="CollisionShape2D" parent="LevelEnd" index="0" unique_id=1217213634]
-position = Vector2(1, -82)
+position = Vector2(18, -81)
 shape = SubResource("RectangleShape2D_ihqr4")
 
 [editable path="LevelEnd"]

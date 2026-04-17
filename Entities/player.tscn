@@ -2,8 +2,14 @@
 
 [ext_resource type="Script" uid="uid://7xlsgbodbds8" path="res://Scripts/player.gd" id="1_dpas3"]
 [ext_resource type="Texture2D" uid="uid://28wp5xlgcjk0" path="res://sprites/Sprite Pack 6/1 - Penguin/Idle (16 x 16).png" id="2_1ew7x"]
+[ext_resource type="Texture2D" uid="uid://cjkxnovdmhxcn" path="res://sprites/Sprite Pack 6/1 - Penguin/Ducking (16 x 16).png" id="2_kee72"]
+[ext_resource type="Texture2D" uid="uid://bbquiuigfwmoo" path="res://sprites/Sprite Pack 6/1 - Penguin/Falling (16 x 16).png" id="3_prmdv"]
 [ext_resource type="Texture2D" uid="uid://d37e6vq7p5b3k" path="res://sprites/Sprite Pack 6/1 - Penguin/Waddling (16 x 16).png" id="3_uv48n"]
 [ext_resource type="Texture2D" uid="uid://d2vj3qn8506lt" path="res://sprites/Sprite Pack 6/1 - Penguin/Jump (16 x 16).png" id="3_wrl3j"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uv48n"]
+radius = 6.0
+height = 16.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wrl3j"]
 atlas = ExtResource("2_1ew7x")
@@ -57,6 +63,22 @@ region = Rect2(80, 0, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_kee72")
+}],
+"loop": false,
+"name": &"duck",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_prmdv")
+}],
+"loop": false,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_wrl3j")
 }, {
 "duration": 1.0,
@@ -107,21 +129,18 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uv48n"]
-radius = 6.0
-height = 16.0
-
 [node name="Player" type="CharacterBody2D" unique_id=600485038 groups=["Player"]]
 collision_layer = 2
 collision_mask = 9
 script = ExtResource("1_dpas3")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=398770589]
+z_index = 2
+shape = SubResource("CapsuleShape2D_uv48n")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1380530015]
 z_index = 1
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_nquvh")
-animation = &"idle"
+animation = &"fall"
 autoplay = "idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=398770589]
-shape = SubResource("CapsuleShape2D_uv48n")
