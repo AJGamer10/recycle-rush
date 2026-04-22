@@ -5,17 +5,23 @@ enum PlayerState {
 	walk,
 	jump,
 	fall,
-	duck
+	duck,
+	slide,
+	dead
 }
 
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 
-const SPEED = 80.0
+@export var max_speed = 180.0
+@export var acceleration = 400
+@export var deceleration = 400
+@export var slide_deceleration = 100
+
 const JUMP_VELOCITY = -300.0
 
 var jump_count = 0
-@export var max_jump_count = 2
+@export var max_jump_count = 1
 var direction = 0
 var status: PlayerState
 
@@ -29,15 +35,19 @@ func _physics_process(delta: float) -> void:
 	
 	match status:
 		PlayerState.idle:
-			idle_state()
+			idle_state(delta)
 		PlayerState.walk:
-			walk_state()
+			walk_state(delta)
 		PlayerState.jump:
-			jump_state()
+			jump_state(delta)
 		PlayerState.fall:
-			fall_state()
+			fall_state(delta)
 		PlayerState.duck:
-			duck_state()
+			duck_state(delta)
+		PlayerState.slide:
+			slide_state(delta)
+		PlayerState.dead:
+			dead_state(delta)
 	
 	move_and_slide()
 
@@ -62,17 +72,26 @@ func go_to_fall_state():
 func go_to_duck_state():
 	status = PlayerState.duck
 	animation.play("duck")
-	collision_shape.shape.radius = 5
-	collision_shape.shape.height = 10
-	collision_shape.position.y = 3
+	set_small_collider()
 
 func exit_from_duck_state():
-	collision_shape.shape.radius = 6
-	collision_shape.shape.height = 16
-	collision_shape.position.y = 0
+	set_large_collider()
+	
+func go_to_slide_state():
+	status = PlayerState.slide
+	animation.play("slide")
+	set_small_collider()
+	
+func exit_from_slide_state():
+	set_large_collider()
 
-func idle_state():
-	move()
+func go_to_dead_state():
+	status = PlayerState.dead
+	animation.play("dead")
+	velocity = Vector2.ZERO
+
+func idle_state(delta):
+	move(delta)
 	if velocity.x != 0:
 		go_to_walk_state()
 		return
@@ -85,8 +104,8 @@ func idle_state():
 		go_to_duck_state()
 		return
 
-func walk_state():
-	move()
+func walk_state(delta):
+	move(delta)
 	if velocity.x == 0:
 		go_to_idle_state()
 		return
@@ -94,9 +113,18 @@ func walk_state():
 	if Input.is_action_just_pressed("pular"):
 		go_to_jump_state()
 		return
+		
+	if Input.is_action_just_pressed("agachar"):
+		go_to_slide_state()
+		return
+		
+	if not is_on_floor():
+		jump_count += 1
+		go_to_fall_state()
+		return
 
-func jump_state():
-	move()
+func jump_state(delta):
+	move(delta)
 	
 	if Input.is_action_just_pressed("pular") && can_jump():
 		go_to_jump_state()
@@ -106,8 +134,8 @@ func jump_state():
 		go_to_fall_state()
 		return
 
-func fall_state():
-	move()
+func fall_state(delta):
+	move(delta)
 	
 	if Input.is_action_just_pressed("pular") && can_jump():
 		go_to_jump_state()
@@ -121,22 +149,37 @@ func fall_state():
 			go_to_walk_state()
 		return
 
-func duck_state():
+func duck_state(_delta):
 	update_direction()
 	if Input.is_action_just_released("agachar"):
 		exit_from_duck_state()
 		go_to_idle_state()
 		return
 
+func slide_state(delta):
+	velocity.x = move_toward(velocity.x, 0, slide_deceleration * delta)
+	
+	if Input.is_action_just_released("agachar"):
+		exit_from_slide_state()
+		go_to_walk_state()
+		return
+		
+	if velocity.x == 0:
+		exit_from_slide_state()
+		go_to_duck_state()
+		return
+		
+func dead_state(_delta):
+	pass
 
-func move():
+func move(delta):
 	update_direction()
 	
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-	
+		velocity.x = move_toward(velocity.x, 0, deceleration * delta)
+
 func update_direction():
 	direction = Input.get_axis("andarEsquerda", "andarDireita")
 	
@@ -147,3 +190,22 @@ func update_direction():
 
 func can_jump() -> bool:
 	return jump_count < max_jump_count
+
+func set_small_collider():
+	collision_shape.shape.radius = 5
+	collision_shape.shape.height = 10
+	collision_shape.position.y = 3
+
+func set_large_collider():
+	collision_shape.shape.radius = 6
+	collision_shape.shape.height = 16
+	collision_shape.position.y = 0
+
+
+func _on_hitbox_area_entered(area: Area2D) -> void:
+	if velocity.y > 0:
+		# inimigo morre
+		area.get_parent().queue_free()
+		go_to_jump_state()
+	else:
+		go_to_dead_state()
