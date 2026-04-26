@@ -205,7 +205,8 @@ func set_large_collider():
 func _on_hitbox_area_entered(area: Area2D) -> void:
 	if velocity.y > 0:
 		# inimigo morre
-		area.get_parent().queue_free()
+		area.get_parent().take_damage()
 		go_to_jump_state()
 	else:
+		# player morre
 		go_to_dead_state()
