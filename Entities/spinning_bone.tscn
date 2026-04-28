@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://cysog7os7royr"]
+
+[ext_resource type="Script" uid="uid://dnsudoe41u28s" path="res://Scripts/spinning_bone.gd" id="1_eo5bi"]
+[ext_resource type="Texture2D" uid="uid://djej4ecm2qa5g" path="res://sprites/3 - Skeleton/Spinning_Bone (16 x 16).png" id="1_jw86c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eo5bi"]
+radius = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtdsj"]
+atlas = ExtResource("1_jw86c")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovqrm"]
+atlas = ExtResource("1_jw86c")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u2ulu"]
+atlas = ExtResource("1_jw86c")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmid5"]
+atlas = ExtResource("1_jw86c")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mavi2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qtdsj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovqrm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u2ulu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmid5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="SpinningBone" type="Area2D" unique_id=184822237 groups=["LethalArea"]]
+collision_layer = 16
+collision_mask = 3
+script = ExtResource("1_eo5bi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1385374777]
+shape = SubResource("CircleShape2D_eo5bi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1853336792]
+sprite_frames = SubResource("SpriteFrames_mavi2")
+autoplay = "default"
+frame_progress = 0.17363815
+
+[node name="SelfDestructTimer" type="Timer" parent="." unique_id=1712032506]
+one_shot = true
+autostart = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="SelfDestructTimer" to="." method="_on_self_destruct_timer_timeout"]

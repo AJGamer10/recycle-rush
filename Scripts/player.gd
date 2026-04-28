@@ -10,8 +10,12 @@ enum PlayerState {
 	hurt
 }
 
+const METAL_TRASH = preload("uid://dobdu4b3ajit1")
+
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
+@onready var hitbox_collision_shape: CollisionShape2D = $Hitbox/CollisionShape2D
+@onready var reload_timer: Timer = $ReloadTimer
 
 @export var max_speed = 180.0
 @export var acceleration = 400
@@ -88,7 +92,8 @@ func exit_from_slide_state():
 func go_to_hurt_state():
 	status = PlayerState.hurt
 	animation.play("hurt")
-	velocity = Vector2.ZERO
+	velocity.x = 0
+	reload_timer.start()
 
 func idle_state(delta):
 	move(delta)
@@ -195,18 +200,43 @@ func set_small_collider():
 	collision_shape.shape.radius = 5
 	collision_shape.shape.height = 10
 	collision_shape.position.y = 3
+	
+	hitbox_collision_shape.shape.size.y = 10
+	hitbox_collision_shape.position.y = 3
 
 func set_large_collider():
 	collision_shape.shape.radius = 6
 	collision_shape.shape.height = 16
 	collision_shape.position.y = 0
-
+	
+	hitbox_collision_shape.shape.size.y = 15
+	hitbox_collision_shape.position.y = 0.5
 
 func _on_hitbox_area_entered(area: Area2D) -> void:
+	if area.is_in_group("Enemies"):
+		hit_enemy(area)
+	elif area.is_in_group("LethalArea"):
+		hit_lethal_area()
+	elif area.is_in_group("Items"):
+		grab_item(area)
+
+func hit_enemy(area: Area2D):
+	print("area_enemie_entered")
 	if velocity.y > 0:
 		# inimigo morre
 		area.get_parent().take_damage()
 		go_to_jump_state()
 	else:
 		# player morre
-		go_to_hurt_state()
+		if status != PlayerState.hurt:
+			go_to_hurt_state()
+
+func hit_lethal_area():
+	go_to_hurt_state()
+
+func grab_item(area):
+	area.position = position + Vector2(0, 50)
+	print("player area entered")
+
+func _on_reload_timer_timeout() -> void:
+	get_tree().reload_current_scene()

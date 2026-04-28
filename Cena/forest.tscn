@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bx5p2cucuoxq6" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="9_tkyun"]
 [ext_resource type="PackedScene" uid="uid://yj6ack46mdqm" path="res://Entities/level_end.tscn" id="12_2kvdh"]
 [ext_resource type="PackedScene" uid="uid://chrtxqaol7lcm" path="res://Entities/skeleton.tscn" id="13_ihqr4"]
+[ext_resource type="PackedScene" uid="uid://dobdu4b3ajit1" path="res://Entities/metal_trash.tscn" id="14_dgrp2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1jovp"]
 texture = ExtResource("9_tkyun")
@@ -168,5 +169,11 @@ position = Vector2(423, 175)
 
 [node name="Skeleton2" parent="." unique_id=429219196 instance=ExtResource("13_ihqr4")]
 position = Vector2(329, 141)
+
+[node name="Skeleton3" parent="." unique_id=405470298 instance=ExtResource("13_ihqr4")]
+position = Vector2(482, 140)
+
+[node name="MetalTrash" parent="." unique_id=1743412726 instance=ExtResource("14_dgrp2")]
+position = Vector2(256, 180)
 
 [editable path="LevelEnd"]
