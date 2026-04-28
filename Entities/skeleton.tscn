@@ -81,7 +81,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_iy30t")
 }],
 "loop": false,
-"name": &"dead",
+"name": &"hurt",
 "speed": 10.0
 }, {
 "frames": [{
@@ -110,7 +110,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ywtcw"]
 radius = 7.0
-height = 26.0
+height = 25.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l2ijo"]
 size = Vector2(12, 26)
@@ -121,9 +121,7 @@ script = ExtResource("1_l2ijo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1748432620]
 sprite_frames = SubResource("SpriteFrames_l2ijo")
-animation = &"dead"
-frame = 6
-frame_progress = 1.0
+animation = &"hurt"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1474167473]
 position = Vector2(2, 3)
@@ -135,3 +133,11 @@ shape = SubResource("CapsuleShape2D_ywtcw")
 position = Vector2(2, 3)
 shape = SubResource("RectangleShape2D_l2ijo")
 debug_color = Color(0.94262445, 0.019534731, 0, 0.41960785)
+
+[node name="WallDetector" type="RayCast2D" parent="." unique_id=1984500582]
+position = Vector2(0, 12)
+target_position = Vector2(12, 0)
+
+[node name="GroundDetector" type="RayCast2D" parent="." unique_id=1611327465]
+position = Vector2(11, 1)
+target_position = Vector2(0, 17)

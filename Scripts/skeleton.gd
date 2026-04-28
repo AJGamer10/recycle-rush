@@ -2,16 +2,20 @@ extends CharacterBody2D
 
 enum SkeletonState {
 	walk,
-	dead
+	hurt
 }
 
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var hitbox: Area2D = $Hitbox
+@onready var wall_detector: RayCast2D = $WallDetector
+@onready var ground_detector: RayCast2D = $GroundDetector
 
-const SPEED = 300.0
+const SPEED = 30.0
 const JUMP_VELOCITY = -400.0
 
 var status: SkeletonState
+
+var direction = 1
 
 func _ready() -> void:
 	go_to_walk_state()
@@ -24,8 +28,8 @@ func _physics_process(delta: float) -> void:
 	match status:
 		SkeletonState.walk:
 			walk_state(delta)
-		SkeletonState.dead:
-			dead_state(delta)
+		SkeletonState.hurt:
+			hurt_state(delta)
 
 	move_and_slide()
 
@@ -33,17 +37,25 @@ func go_to_walk_state():
 	status = SkeletonState.walk
 	animation.play("walk")
 
-func go_to_dead_state():
-	status = SkeletonState.dead
-	animation.play("dead")
+func go_to_hurt_state():
+	status = SkeletonState.hurt
+	animation.play("hurt")
 	hitbox.process_mode = Node.PROCESS_MODE_DISABLED
-	
+	velocity = Vector2.ZERO
 	
 func walk_state(_delta):
-	pass
+	velocity.x = SPEED * direction
+	
+	if wall_detector.is_colliding():
+		scale.x *= -1
+		direction *= -1
+		
+	if not ground_detector.is_colliding():
+		scale.x *= -1
+		direction *= -1
 
-func dead_state(_delta):
+func hurt_state(_delta):
 	pass
 
 func take_damage():
-	go_to_dead_state()
+	go_to_hurt_state()
