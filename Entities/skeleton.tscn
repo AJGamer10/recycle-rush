@@ -151,7 +151,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ywtcw"]
 radius = 7.0
-height = 25.0
+height = 25.5
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l2ijo"]
 size = Vector2(12, 26)
@@ -162,9 +162,7 @@ script = ExtResource("1_l2ijo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1748432620]
 sprite_frames = SubResource("SpriteFrames_l2ijo")
-animation = &"attack"
-frame = 2
-frame_progress = 0.7890487
+animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1474167473]
 position = Vector2(2, 3)

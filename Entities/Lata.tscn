@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://djklg8tvb6nte"]
+
+[ext_resource type="Texture2D" uid="uid://bosu7sck0nset" path="res://sprites/Selective_trashs/trashs.png" id="1_ui8cr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sxbag"]
+size = Vector2(6, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5355f"]
+atlas = ExtResource("1_ui8cr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fqsag"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5355f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Lata" type="Area2D" unique_id=1701970885 groups=["Item"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1531717567]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_sxbag")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1334691374]
+sprite_frames = SubResource("SpriteFrames_fqsag")
