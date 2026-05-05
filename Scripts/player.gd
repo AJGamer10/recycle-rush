@@ -117,6 +117,7 @@ func go_to_hurt_state():
 func go_to_grab_state():
 	status = PlayerState.grab
 	animation.play("grab")
+	
 
 func idle_state(delta):
 	move(delta)
@@ -133,8 +134,9 @@ func idle_state(delta):
 		return
 	
 	if Input.is_action_just_pressed("agarrar"):
-		go_to_grab_state()
-		return
+		if item:
+			go_to_grab_state()
+			return
 
 func walk_state(delta):
 	move(delta)
@@ -231,8 +233,9 @@ func wall_state(delta):
 func hurt_state(_delta):
 	pass
 
-func grab_state(_delta):
-	pass
+func grab_state(delta):
+	move(delta)
+	item.reparent(self)
 
 func move(delta):
 	update_direction()
@@ -279,6 +282,9 @@ func _on_hitbox_area_entered(area: Area2D) -> void:
 		hit_enemy(area)
 	elif area.is_in_group("LethalArea"):
 		hit_lethal_area()
+	elif area.is_in_group("Items"):
+		print("Entrou no item")
+		item = area
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("LethalArea"):

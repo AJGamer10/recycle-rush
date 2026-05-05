@@ -268,7 +268,7 @@ z_index = 1
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_nquvh")
 animation = &"grab"
-frame_progress = 0.10422375
+frame_progress = 0.92717624
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=1982183674]
 collision_layer = 2
