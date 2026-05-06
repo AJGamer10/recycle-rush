@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfr0rat2623vn"
-path="res://.godot/imported/Grabbing (16 x 16).png-42f69787c16cc17183c03745f77eb448.ctex"
+uid="uid://b0pjmubcso8nq"
+path="res://.godot/imported/Grabbing_Idle(16 x 16).png.png-290edd80c711e9591fefcdcea854d2cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/1 - Penguin/Grabbing (16 x 16).png"
-dest_files=["res://.godot/imported/Grabbing (16 x 16).png-42f69787c16cc17183c03745f77eb448.ctex"]
+source_file="res://sprites/1 - Penguin/Grabbing_Idle(16 x 16).png.png"
+dest_files=["res://.godot/imported/Grabbing_Idle(16 x 16).png.png-290edd80c711e9591fefcdcea854d2cf.ctex"]
 
 [params]
 

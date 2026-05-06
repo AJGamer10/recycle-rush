@@ -35,6 +35,7 @@ var direction = 0
 var status: PlayerState
 var item: Area2D
 var item_parent: Node
+var sprite_item: AnimatedSprite2D
 
 func _ready() -> void:
 	go_to_idle_state()
@@ -116,8 +117,6 @@ func go_to_hurt_state():
 
 func go_to_grab_state():
 	status = PlayerState.grab
-	animation.play("grab")
-	
 
 func idle_state(delta):
 	move(delta)
@@ -236,6 +235,17 @@ func hurt_state(_delta):
 func grab_state(delta):
 	move(delta)
 	item.reparent(self)
+	item.z_index = 10
+	item.position = Vector2(-1 if animation.flip_h == true else 1, -12)
+	
+	if (velocity.x != 0):
+		animation.play("grab_walk")
+	else:
+		animation.play("grab_idle")
+		
+	if Input.is_action_just_pressed("pular"):
+		velocity.y = JUMP_VELOCITY
+		jump_count += 1
 
 func move(delta):
 	update_direction()

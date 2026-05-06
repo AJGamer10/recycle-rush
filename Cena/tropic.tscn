@@ -145,7 +145,7 @@ frame_progress = 0.45217037
 centered = false
 
 [node name="Camera" parent="." unique_id=2051687981 instance=ExtResource("11_hlfhi")]
-position = Vector2(53, 117)
+position = Vector2(41, 166)
 limit_right = 920
 
 [node name="LevelEnd" parent="." unique_id=2011986027 instance=ExtResource("12_ar0it")]
@@ -160,7 +160,7 @@ shape = SubResource("RectangleShape2D_ar0it")
 position = Vector2(263, 150)
 
 [node name="Player" parent="." unique_id=600485038 instance=ExtResource("1_chatn")]
-position = Vector2(436, 164)
+position = Vector2(40, 164)
 
 [node name="Lata" parent="." unique_id=1701970885 instance=ExtResource("14_rsfxa")]
 position = Vector2(75, 168)
