@@ -20,7 +20,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Lata" type="Area2D" unique_id=1701970885 groups=["Items"]]
+[node name="Lata" type="Area2D" unique_id=1701970885 groups=["Garbage"]]
 collision_layer = 32
 collision_mask = 2
 

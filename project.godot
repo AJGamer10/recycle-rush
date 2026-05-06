@@ -31,7 +31,8 @@ project/assembly_name="Recycle Rush"
 Player=""
 Enemies=""
 LethalArea=""
-Items=""
+Trashcan=""
+Garbage=""
 
 [input]
 

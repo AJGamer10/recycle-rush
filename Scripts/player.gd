@@ -292,8 +292,7 @@ func _on_hitbox_area_entered(area: Area2D) -> void:
 		hit_enemy(area)
 	elif area.is_in_group("LethalArea"):
 		hit_lethal_area()
-	elif area.is_in_group("Items"):
-		print("Entrou no item")
+	elif area.is_in_group("Garbage"):
 		item = area
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
