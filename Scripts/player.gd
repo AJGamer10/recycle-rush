@@ -11,6 +11,13 @@ enum PlayerState {
 	hurt,
 	grab
 }
+var trash_response = {
+	"MetalTrashcan": "Metal",
+	"PaperTrashcan": "Paper",
+	"GlassTrashcan": "Glass",
+	"PlasticTrashcan": "Plastic",
+	"OrganicTrashcan": "Organic"
+}
 
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
@@ -20,9 +27,9 @@ enum PlayerState {
 
 @onready var reload_timer: Timer = $ReloadTimer
 
-@export var max_speed = 180.0
-@export var acceleration = 400
-@export var deceleration = 400
+@export var max_speed = 140.0
+@export var acceleration = 250
+@export var deceleration = 500
 @export var slide_deceleration = 100
 @export var wall_acceleration = 40
 @export var wall_jump_velocity = 240
@@ -34,13 +41,28 @@ var jump_count = 0
 var direction = 0
 var status: PlayerState
 var item: Area2D
-var item_parent: Node
 var sprite_item: AnimatedSprite2D
+var trashcan: Area2D
+var coyote_time = 0.12
+var coyote_timer = 0.0
+var jump_buffer_time = 0.12
+var jump_buffer_timer = 0.0
 
 func _ready() -> void:
 	go_to_idle_state()
 
 func _physics_process(delta: float) -> void:
+	
+	# Fisica Coyote
+	if is_on_floor():
+		coyote_timer = coyote_time
+	else:
+		coyote_timer -= delta
+	
+	if Input.is_action_just_pressed("pular"):
+		jump_buffer_timer = jump_buffer_time
+	else:
+		jump_buffer_timer -= delta
 	
 	apply_gravity(delta)
 
@@ -117,14 +139,18 @@ func go_to_hurt_state():
 
 func go_to_grab_state():
 	status = PlayerState.grab
+	item.reparent(self)
+	set_collision_mask_value(6, false)
+	item.z_index = 10
 
 func idle_state(delta):
 	move(delta)
 	if velocity.x != 0:
 		go_to_walk_state()
 		return
-		
-	if Input.is_action_just_pressed("pular"):
+	
+	if jump_buffer_timer > 0 and is_on_floor():
+		jump_buffer_timer = 0.0
 		go_to_jump_state()
 		return
 		
@@ -133,7 +159,7 @@ func idle_state(delta):
 		return
 	
 	if Input.is_action_just_pressed("agarrar"):
-		if item:
+		if item && item.get_parent() != trashcan:
 			go_to_grab_state()
 			return
 
@@ -143,7 +169,9 @@ func walk_state(delta):
 		go_to_idle_state()
 		return
 	
-	if Input.is_action_just_pressed("pular"):
+	
+	if jump_buffer_timer > 0 and is_on_floor():
+		jump_buffer_timer = 0.0
 		go_to_jump_state()
 		return
 		
@@ -158,6 +186,9 @@ func walk_state(delta):
 
 func jump_state(delta):
 	move(delta)
+
+	if Input.is_action_just_released("pular") and velocity.y < 0:
+		velocity.y *= 0.5
 	
 	if Input.is_action_just_pressed("pular") && can_jump():
 		go_to_jump_state()
@@ -234,24 +265,38 @@ func hurt_state(_delta):
 
 func grab_state(delta):
 	move(delta)
-	item.reparent(self)
-	item.z_index = 10
-	item.position = Vector2(-1 if animation.flip_h == true else 1, -12)
+	
+	if item:
+		item.position = Vector2(-1 if animation.flip_h else 1, -12)
 	
 	if (velocity.x != 0):
 		animation.play("grab_walk")
 	else:
 		animation.play("grab_idle")
 		
-	if Input.is_action_just_pressed("pular"):
+	if Input.is_action_just_pressed("pular") and can_jump():
 		velocity.y = JUMP_VELOCITY
 		jump_count += 1
+			
+	if is_on_floor():
+		jump_count = 0
+	elif not is_on_floor() and jump_count == 0:
+		jump_count = 1
+	
+	if Input.is_action_just_pressed("agarrar") && trashcan:
+		if trash_response[trashcan.name] == item.name.substr(0, 5):
+			item.reparent(trashcan)
+			set_collision_mask_value(6, true)
+			go_to_idle_state()
+			return
 
 func move(delta):
 	update_direction()
 	
 	if direction:
-		velocity.x = move_toward(velocity.x, direction * max_speed, acceleration * delta)
+		var mudando_direcao = sign(velocity.x) != 0 and sign(velocity.x) != sign(direction)
+		var forca = deceleration if mudando_direcao else acceleration
+		velocity.x = move_toward(velocity.x, direction * max_speed, forca * delta)
 	else:
 		velocity.x = move_toward(velocity.x, 0, deceleration * delta)
 
@@ -269,7 +314,14 @@ func update_direction():
 		animation.flip_h = false
 
 func can_jump() -> bool:
-	return jump_count < max_jump_count
+	var coyote_valido = coyote_timer > 0.0 and jump_count == 0
+	return jump_count < max_jump_count or coyote_valido
+
+func has_child_in_group(group: String) -> bool:
+	for child in get_children():
+		if child.is_in_group(group):
+			return true
+	return false
 
 func set_small_collider():
 	collision_shape.shape.radius = 5
@@ -293,7 +345,10 @@ func _on_hitbox_area_entered(area: Area2D) -> void:
 	elif area.is_in_group("LethalArea"):
 		hit_lethal_area()
 	elif area.is_in_group("Garbage"):
-		item = area
+		if not (area.get_parent().is_in_group("Trashcan")):
+			item = area
+	elif area.is_in_group("Trashcan"):
+		trashcan = area
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("LethalArea"):

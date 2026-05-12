@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://djklg8tvb6nte"]
 
-[ext_resource type="Texture2D" uid="uid://bosu7sck0nset" path="res://sprites/Selective_trashs/trashs.png" id="1_ui8cr"]
+[ext_resource type="Script" uid="uid://x08tdceyt2p8" path="res://Scripts/garbage.gd" id="1_672j4"]
+[ext_resource type="Texture2D" uid="uid://bosu7sck0nset" path="res://sprites/Selective_trashs/trashs.png" id="2_sly6a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sxbag"]
 size = Vector2(6, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5355f"]
-atlas = ExtResource("1_ui8cr")
+atlas = ExtResource("2_sly6a")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fqsag"]
@@ -20,9 +21,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Lata" type="Area2D" unique_id=1701970885 groups=["Garbage"]]
+[node name="Metal" type="Area2D" unique_id=1701970885 groups=["Garbage"]]
 collision_layer = 32
 collision_mask = 2
+script = ExtResource("1_672j4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1531717567]
 position = Vector2(0, 0.5)

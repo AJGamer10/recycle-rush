@@ -1,14 +1,13 @@
 [gd_scene format=3 uid="uid://c3348jf6qmrtd"]
 
-[ext_resource type="Script" uid="uid://ruuhhq08abmt" path="res://Scripts/trashcan.gd" id="1_feos2"]
-[ext_resource type="Texture2D" uid="uid://bilxinn1my7pe" path="res://sprites/Selective_trashs/selective_trashs-80x32.png" id="2_g4uv2"]
-[ext_resource type="FontFile" uid="uid://c1bokt18am354" path="res://Fonts/DeterminationSansWeb.woff" id="3_sd5fj"]
+[ext_resource type="Texture2D" uid="uid://bilxinn1my7pe" path="res://sprites/Selective_trashs/selective_trashs-80x32.png" id="1_ldqtg"]
+[ext_resource type="Script" uid="uid://ruuhhq08abmt" path="res://Scripts/metal_trashcan.gd" id="1_pvvd8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pvvd8"]
 size = Vector2(10, 15)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_feos2"]
-atlas = ExtResource("2_g4uv2")
+atlas = ExtResource("1_ldqtg")
 region = Rect2(48, 0, 16, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g4uv2"]
@@ -23,14 +22,14 @@ animations = [{
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pvvd8"]
-font = ExtResource("3_sd5fj")
 font_color = Color(0.022979883, 0.022979883, 0.022979883, 1)
 outline_color = Color(0.036233686, 0.030335423, 0.005397975, 1)
 
 [node name="MetalTrashcan" type="Area2D" unique_id=425295741 groups=["Trashcan"]]
 collision_layer = 64
 collision_mask = 2
-script = ExtResource("1_feos2")
+script = ExtResource("1_pvvd8")
+maxGarbage = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1555335278]
 position = Vector2(0, 5.5)
