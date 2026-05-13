@@ -65,6 +65,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ar0it"]
 size = Vector2(20, 120)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c1rl1"]
+size = Vector2(20, 96.5)
+
 [node name="Tropic" type="Node2D" unique_id=1531906488]
 metadata/_edit_vertical_guides_ = [920.0]
 
@@ -171,5 +174,12 @@ position = Vector2(60, 165)
 
 [node name="MetalTrashcan" parent="." unique_id=425295741 instance=ExtResource("15_c1rl1")]
 position = Vector2(410, 161)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1801763174]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=4646849]
+position = Vector2(-10, -44)
+shape = SubResource("RectangleShape2D_c1rl1")
 
 [editable path="LevelEnd"]

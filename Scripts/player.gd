@@ -142,6 +142,7 @@ func go_to_grab_state():
 	item.reparent(self)
 	set_collision_mask_value(6, false)
 	item.z_index = 10
+	item.position = Vector2(-1 if animation.flip_h else 1, -12)
 
 func idle_state(delta):
 	move(delta)
@@ -267,13 +268,16 @@ func grab_state(delta):
 	move(delta)
 	
 	if item:
-		item.position = Vector2(-1 if animation.flip_h else 1, -12)
+		item.position.x = -1 if animation.flip_h else 1
 	
 	if (velocity.x != 0):
 		animation.play("grab_walk")
 	else:
 		animation.play("grab_idle")
-		
+	
+	if Input.is_action_just_released("pular") and velocity.y < 0:
+		velocity.y *= 0.5
+	
 	if Input.is_action_just_pressed("pular") and can_jump():
 		velocity.y = JUMP_VELOCITY
 		jump_count += 1
