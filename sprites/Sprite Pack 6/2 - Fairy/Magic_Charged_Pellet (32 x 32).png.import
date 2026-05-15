@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wsepvlegn3nt"
-path="res://.godot/imported/Magic_Charged_Pellet (32 x 32).png-33819cd7efee65ef1bb4203e35e1ffa6.ctex"
+uid="uid://cxj1q712c0deu"
+path="res://.godot/imported/Magic_Charged_Pellet (32 x 32).png-174da22e5e8d00146aa288a74b09b26e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/2 - Fairy/Magic_Charged_Pellet (32 x 32).png"
-dest_files=["res://.godot/imported/Magic_Charged_Pellet (32 x 32).png-33819cd7efee65ef1bb4203e35e1ffa6.ctex"]
+source_file="res://Sprites/Sprite Pack 6/2 - Fairy/Magic_Charged_Pellet (32 x 32).png"
+dest_files=["res://.godot/imported/Magic_Charged_Pellet (32 x 32).png-174da22e5e8d00146aa288a74b09b26e.ctex"]
 
 [params]
 

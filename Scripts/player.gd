@@ -24,6 +24,9 @@ var trash_response = {
 @onready var hitbox_collision_shape: CollisionShape2D = $Hitbox/CollisionShape2D
 @onready var left_wall_detector: RayCast2D = $LeftWallDetector
 @onready var right_wall_detector: RayCast2D = $RightWallDetector
+@onready var walk_audio: AudioStreamPlayer2D = $SoundEfects/WalkAudio
+@onready var grab_garbage_audio: AudioStreamPlayer2D = $SoundEfects/GrabGarbageAudio
+@onready var jump_audio: AudioStreamPlayer2D = $SoundEfects/JumpAudio
 
 @onready var reload_timer: Timer = $ReloadTimer
 
@@ -49,6 +52,7 @@ var jump_buffer_time = 0.12
 var jump_buffer_timer = 0.0
 
 func _ready() -> void:
+	animation.frame_changed.connect(_on_animation_frame_changed)
 	go_to_idle_state()
 
 func _physics_process(delta: float) -> void:
@@ -96,12 +100,16 @@ func go_to_walk_state():
 	status = PlayerState.walk
 	animation.play("walk")
 
+func exit_from_walk_state():
+	walk_audio.stop()
+
 func go_to_jump_state():
 	status = PlayerState.jump
 	animation.play("jump")
 	velocity.y = JUMP_VELOCITY
 	jump_count += 1
-	
+	jump_audio.play()
+
 func go_to_fall_state():
 	status = PlayerState.fall
 	animation.play("fall")
@@ -113,12 +121,12 @@ func go_to_duck_state():
 
 func exit_from_duck_state():
 	set_large_collider()
-	
+
 func go_to_slide_state():
 	status = PlayerState.slide
 	animation.play("slide")
 	set_small_collider()
-	
+
 func exit_from_slide_state():
 	set_large_collider()
 
@@ -166,22 +174,27 @@ func idle_state(delta):
 
 func walk_state(delta):
 	move(delta)
+	
 	if velocity.x == 0:
+		exit_from_walk_state()
 		go_to_idle_state()
 		return
 	
 	
 	if jump_buffer_timer > 0 and is_on_floor():
 		jump_buffer_timer = 0.0
+		exit_from_walk_state()
 		go_to_jump_state()
 		return
 		
 	if Input.is_action_just_pressed("agachar"):
+		exit_from_walk_state()
 		go_to_slide_state()
 		return
 		
 	if not is_on_floor():
 		jump_count += 1
+		exit_from_walk_state()
 		go_to_fall_state()
 		return
 
@@ -267,12 +280,10 @@ func hurt_state(_delta):
 func grab_state(delta):
 	move(delta)
 	
-	if item:
-		item.position.x = -1 if animation.flip_h else 1
-	
 	if (velocity.x != 0):
 		animation.play("grab_walk")
 	else:
+		exit_from_walk_state()
 		animation.play("grab_idle")
 	
 	if Input.is_action_just_released("pular") and velocity.y < 0:
@@ -281,12 +292,13 @@ func grab_state(delta):
 	if Input.is_action_just_pressed("pular") and can_jump():
 		velocity.y = JUMP_VELOCITY
 		jump_count += 1
+		jump_audio.play()
 			
 	if is_on_floor():
 		jump_count = 0
 	elif not is_on_floor() and jump_count == 0:
 		jump_count = 1
-	
+		
 	if Input.is_action_just_pressed("agarrar") && trashcan:
 		if trash_response[trashcan.name] == item.name.substr(0, 5):
 			item.reparent(trashcan)
@@ -372,3 +384,10 @@ func hit_lethal_area():
 
 func _on_reload_timer_timeout() -> void:
 	get_tree().reload_current_scene()
+
+func _on_animation_frame_changed():
+	if (status == PlayerState.walk or (status == PlayerState.grab and velocity.x > 0)) and is_on_floor():
+		# toca apenas nos frames de contato do pé com o chão
+		# ajusta os números conforme os frames da sua animação
+		if animation.frame in [1, 4]:
+			walk_audio.play()

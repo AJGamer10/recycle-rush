@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqujp2i42bing"
-path="res://.godot/imported/Idle_Flying (32 x 32).png-48f23edb99baeb581c580e718db4040d.ctex"
+uid="uid://bt7an2nm1knu7"
+path="res://.godot/imported/Idle_Flying (32 x 32).png-8b6513ebdffbc38c46325a44e0dc6dec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/2 - Fairy/Idle_Flying (32 x 32).png"
-dest_files=["res://.godot/imported/Idle_Flying (32 x 32).png-48f23edb99baeb581c580e718db4040d.ctex"]
+source_file="res://Sprites/Sprite Pack 6/2 - Fairy/Idle_Flying (32 x 32).png"
+dest_files=["res://.godot/imported/Idle_Flying (32 x 32).png-8b6513ebdffbc38c46325a44e0dc6dec.ctex"]
 
 [params]
 

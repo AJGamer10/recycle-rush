@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx1vi0s0vk8nh"
-path="res://.godot/imported/Blink (32 x 32).png-4dc0020cf7a2715c217050dcfee141ab.ctex"
+uid="uid://du54idly0rv53"
+path="res://.godot/imported/Blink (32 x 32).png-c0ec6131b6f29a82f339dd537c07e156.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/4 - Orange/Blink (32 x 32).png"
-dest_files=["res://.godot/imported/Blink (32 x 32).png-4dc0020cf7a2715c217050dcfee141ab.ctex"]
+source_file="res://Sprites/Sprite Pack 6/4 - Orange/Blink (32 x 32).png"
+dest_files=["res://.godot/imported/Blink (32 x 32).png-c0ec6131b6f29a82f339dd537c07e156.ctex"]
 
 [params]
 

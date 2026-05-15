@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" format=3 uid="uid://gwcm4isqst2p"]
 
-[ext_resource type="Texture2D" uid="uid://phxauxin8qky" path="res://sprites/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="1_xmexe"]
-[ext_resource type="Texture2D" uid="uid://d3ibpatb1uxna" path="res://sprites/Seasonal Tilesets/5 - Misc. universal tiles/Flowers (16 x 16).png" id="2_grjcq"]
-[ext_resource type="Texture2D" uid="uid://bnf5xfn0ac71h" path="res://sprites/Seasonal Tilesets/5 - Misc. universal tiles/House (112 x 96).png" id="3_ucjii"]
-[ext_resource type="Texture2D" uid="uid://cu7ylm7ghl2hy" path="res://sprites/Seasonal Tilesets/3 - Tropics/Tropics_entities (16 x 16).png" id="4_grjcq"]
+[ext_resource type="Texture2D" uid="uid://bt4l6a1tf33n1" path="res://sprites/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="1_xmexe"]
+[ext_resource type="Texture2D" uid="uid://bkxsm81ejj0fy" path="res://sprites/Seasonal Tilesets/5 - Misc. universal tiles/Flowers (16 x 16).png" id="2_grjcq"]
+[ext_resource type="Texture2D" uid="uid://b5nq3mp27jvdr" path="res://sprites/Seasonal Tilesets/5 - Misc. universal tiles/House (112 x 96).png" id="3_ucjii"]
+[ext_resource type="Texture2D" uid="uid://x41lpnn8ry5q" path="res://sprites/Seasonal Tilesets/3 - Tropics/Tropics_entities (16 x 16).png" id="4_grjcq"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_ayn8b"]
 tile_data = PackedInt32Array(0, 983040, 2, 1, 1048576, 2, 2, 1048576, 2, 3, 1114112, 2)

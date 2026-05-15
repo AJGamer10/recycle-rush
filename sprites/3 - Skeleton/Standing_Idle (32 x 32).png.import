@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1qslxfxgg5y"
-path="res://.godot/imported/Standing_Idle (32 x 32).png-33075a8f89417061807c5e2e02509853.ctex"
+uid="uid://bc1rrrdm41m75"
+path="res://.godot/imported/Standing_Idle (32 x 32).png-200ed6a9ec903191ed619674b74f490a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/3 - Skeleton/Standing_Idle (32 x 32).png"
-dest_files=["res://.godot/imported/Standing_Idle (32 x 32).png-33075a8f89417061807c5e2e02509853.ctex"]
+source_file="res://Sprites/3 - Skeleton/Standing_Idle (32 x 32).png"
+dest_files=["res://.godot/imported/Standing_Idle (32 x 32).png-200ed6a9ec903191ed619674b74f490a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bl0l6rtpspsuw"
-path="res://.godot/imported/Hurt (32 x 32).png-4e99c9ba806e06fae80b01a48636b6d6.ctex"
+uid="uid://cc7u5u3ndxcqc"
+path="res://.godot/imported/Hurt (32 x 32).png-8f3a17433c5715c6da1cebc071626d3e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/2 - Fairy/Hurt (32 x 32).png"
-dest_files=["res://.godot/imported/Hurt (32 x 32).png-4e99c9ba806e06fae80b01a48636b6d6.ctex"]
+source_file="res://Sprites/Sprite Pack 6/2 - Fairy/Hurt (32 x 32).png"
+dest_files=["res://.godot/imported/Hurt (32 x 32).png-8f3a17433c5715c6da1cebc071626d3e.ctex"]
 
 [params]
 

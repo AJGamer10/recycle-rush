@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jvsgqrkdj3tl"
-path="res://.godot/imported/Charging_Magic_Flying (32 x 32).png-ce7637e79e980b1244d88b6d0505752a.ctex"
+uid="uid://bmhkfq18v7nor"
+path="res://.godot/imported/Charging_Magic_Flying (32 x 32).png-ec6b85d540ff9c1ad90b88ecf8b2d9f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/2 - Fairy/Charging_Magic_Flying (32 x 32).png"
-dest_files=["res://.godot/imported/Charging_Magic_Flying (32 x 32).png-ce7637e79e980b1244d88b6d0505752a.ctex"]
+source_file="res://Sprites/Sprite Pack 6/2 - Fairy/Charging_Magic_Flying (32 x 32).png"
+dest_files=["res://.godot/imported/Charging_Magic_Flying (32 x 32).png-ec6b85d540ff9c1ad90b88ecf8b2d9f9.ctex"]
 
 [params]
 

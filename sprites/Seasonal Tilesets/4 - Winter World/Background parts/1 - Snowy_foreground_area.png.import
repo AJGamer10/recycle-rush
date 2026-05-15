@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8qj77g4mxsmq"
-path="res://.godot/imported/1 - Snowy_foreground_area.png-693611335574a288e87ca0327f89bfd3.ctex"
+uid="uid://cmxcohw4j0dup"
+path="res://.godot/imported/1 - Snowy_foreground_area.png-a2eca997440fb4fb8d446ec5ad5ca405.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Seasonal Tilesets/4 - Winter World/Background parts/1 - Snowy_foreground_area.png"
-dest_files=["res://.godot/imported/1 - Snowy_foreground_area.png-693611335574a288e87ca0327f89bfd3.ctex"]
+source_file="res://Sprites/Seasonal Tilesets/4 - Winter World/Background parts/1 - Snowy_foreground_area.png"
+dest_files=["res://.godot/imported/1 - Snowy_foreground_area.png-a2eca997440fb4fb8d446ec5ad5ca405.ctex"]
 
 [params]
 

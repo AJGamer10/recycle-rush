@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpd0ty4jjykug"
-path="res://.godot/imported/Walking (32 x 32).png-dca8110eaa966ee91cabbd699158bffb.ctex"
+uid="uid://jfe7muhluykh"
+path="res://.godot/imported/Walking (32 x 32).png-58d8c18d4fdb93cffe75974fb45f2005.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/4 - Orange/Walking (32 x 32).png"
-dest_files=["res://.godot/imported/Walking (32 x 32).png-dca8110eaa966ee91cabbd699158bffb.ctex"]
+source_file="res://Sprites/Sprite Pack 6/4 - Orange/Walking (32 x 32).png"
+dest_files=["res://.godot/imported/Walking (32 x 32).png-58d8c18d4fdb93cffe75974fb45f2005.ctex"]
 
 [params]
 

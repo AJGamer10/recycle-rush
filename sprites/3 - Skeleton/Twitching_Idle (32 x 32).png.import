@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2mybwn7mlk1d"
-path="res://.godot/imported/Twitching_Idle (32 x 32).png-6bcd798e6aeb54087f71ad4c625f5671.ctex"
+uid="uid://l5ixylro62gb"
+path="res://.godot/imported/Twitching_Idle (32 x 32).png-4b31d29e2fb0ae60e0d33a05ea78e944.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/3 - Skeleton/Twitching_Idle (32 x 32).png"
-dest_files=["res://.godot/imported/Twitching_Idle (32 x 32).png-6bcd798e6aeb54087f71ad4c625f5671.ctex"]
+source_file="res://Sprites/3 - Skeleton/Twitching_Idle (32 x 32).png"
+dest_files=["res://.godot/imported/Twitching_Idle (32 x 32).png-4b31d29e2fb0ae60e0d33a05ea78e944.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4cjghh8ja684"
-path="res://.godot/imported/Idle (32 x 32).png-f59b7ff16e44f356dd7bae951c0e0ff0.ctex"
+uid="uid://bnbsivkmc7jnt"
+path="res://.godot/imported/Idle (32 x 32).png-fa53a8631abdc9b9386bd525e43bd22a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/4 - Orange/Idle (32 x 32).png"
-dest_files=["res://.godot/imported/Idle (32 x 32).png-f59b7ff16e44f356dd7bae951c0e0ff0.ctex"]
+source_file="res://Sprites/Sprite Pack 6/4 - Orange/Idle (32 x 32).png"
+dest_files=["res://.godot/imported/Idle (32 x 32).png-fa53a8631abdc9b9386bd525e43bd22a.ctex"]
 
 [params]
 

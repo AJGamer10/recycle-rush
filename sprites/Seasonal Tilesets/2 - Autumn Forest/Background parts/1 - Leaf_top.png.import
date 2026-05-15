@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2x30p7ow1co3"
-path="res://.godot/imported/1 - Leaf_top.png-803e7c43af0e714b5522f421181591d5.ctex"
+uid="uid://bfe2i55l5vato"
+path="res://.godot/imported/1 - Leaf_top.png-2331c19670ad9537fc616fef7b5d6279.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/1 - Leaf_top.png"
-dest_files=["res://.godot/imported/1 - Leaf_top.png-803e7c43af0e714b5522f421181591d5.ctex"]
+source_file="res://Sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/1 - Leaf_top.png"
+dest_files=["res://.godot/imported/1 - Leaf_top.png-2331c19670ad9537fc616fef7b5d6279.ctex"]
 
 [params]
 

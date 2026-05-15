@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" format=3 uid="uid://byjave0rbuodf"]
 
-[ext_resource type="Texture2D" uid="uid://c1m0wia62y85d" path="res://sprites/Seasonal Tilesets/5 - Misc. universal tiles/Lava_frames (16 x 32).png" id="1_5smiy"]
+[ext_resource type="Texture2D" uid="uid://v6h1r67v014d" path="res://sprites/Seasonal Tilesets/5 - Misc. universal tiles/Lava_frames (16 x 32).png" id="1_5smiy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1xdv1"]
 texture = ExtResource("1_5smiy")

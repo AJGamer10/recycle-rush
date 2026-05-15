@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnp2uaweh56wh"
-path="res://.godot/imported/Standing (32 x 32).png-b1502df25a0c397a14e00476e37d47f5.ctex"
+uid="uid://bow7r1vv1uwwb"
+path="res://.godot/imported/Standing (32 x 32).png-f7ba93e6c3e97a46cd354bbd447d8aaa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/4 - Orange/Standing (32 x 32).png"
-dest_files=["res://.godot/imported/Standing (32 x 32).png-b1502df25a0c397a14e00476e37d47f5.ctex"]
+source_file="res://Sprites/Sprite Pack 6/4 - Orange/Standing (32 x 32).png"
+dest_files=["res://.godot/imported/Standing (32 x 32).png-f7ba93e6c3e97a46cd354bbd447d8aaa.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3ibpatb1uxna"
-path="res://.godot/imported/Flowers (16 x 16).png-04871e8ab164107c640ab99a7df37a57.ctex"
+uid="uid://bkxsm81ejj0fy"
+path="res://.godot/imported/Flowers (16 x 16).png-3223c0143366ddaf0b2eea180ab17972.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Seasonal Tilesets/5 - Misc. universal tiles/Flowers (16 x 16).png"
-dest_files=["res://.godot/imported/Flowers (16 x 16).png-04871e8ab164107c640ab99a7df37a57.ctex"]
+source_file="res://Sprites/Seasonal Tilesets/5 - Misc. universal tiles/Flowers (16 x 16).png"
+dest_files=["res://.godot/imported/Flowers (16 x 16).png-3223c0143366ddaf0b2eea180ab17972.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh54sgpal15k2"
-path="res://.godot/imported/Standing (32 x 32).png-2c969ac295b3d33f1c9c83b84748c24b.ctex"
+uid="uid://cwkm68t04dq06"
+path="res://.godot/imported/Standing (32 x 32).png-fcdceb3abc0a347f60337cab837190af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/3 - Skeleton/Standing (32 x 32).png"
-dest_files=["res://.godot/imported/Standing (32 x 32).png-2c969ac295b3d33f1c9c83b84748c24b.ctex"]
+source_file="res://Sprites/3 - Skeleton/Standing (32 x 32).png"
+dest_files=["res://.godot/imported/Standing (32 x 32).png-fcdceb3abc0a347f60337cab837190af.ctex"]
 
 [params]
 

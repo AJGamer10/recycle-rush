@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkd552px1hkwd"
-path="res://.godot/imported/_Complete_static_BG_(288 x 208).png-8556eb08b6d995199aeb9dcbc61e320c.ctex"
+uid="uid://dhelypif4hhj6"
+path="res://.godot/imported/_Complete_static_BG_(288 x 208).png-b965210b1504b502389129fd36cd0e8e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Seasonal Tilesets/4 - Winter World/Background parts/_Complete_static_BG_(288 x 208).png"
-dest_files=["res://.godot/imported/_Complete_static_BG_(288 x 208).png-8556eb08b6d995199aeb9dcbc61e320c.ctex"]
+source_file="res://Sprites/Seasonal Tilesets/4 - Winter World/Background parts/_Complete_static_BG_(288 x 208).png"
+dest_files=["res://.godot/imported/_Complete_static_BG_(288 x 208).png-b965210b1504b502389129fd36cd0e8e.ctex"]
 
 [params]
 

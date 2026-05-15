@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqlfem385nqkl"
-path="res://.godot/imported/Extra_plants (16 x 16).png-82ce10e8a10c202ac1f223f83d5385d5.ctex"
+uid="uid://p6n3ps4jox48"
+path="res://.godot/imported/Extra_plants (16 x 16).png-91a157bbc9211b2a6f2b9e8e6b1987ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png"
-dest_files=["res://.godot/imported/Extra_plants (16 x 16).png-82ce10e8a10c202ac1f223f83d5385d5.ctex"]
+source_file="res://Sprites/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png"
+dest_files=["res://.godot/imported/Extra_plants (16 x 16).png-91a157bbc9211b2a6f2b9e8e6b1987ee.ctex"]
 
 [params]
 
