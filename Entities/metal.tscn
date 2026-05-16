@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://djklg8tvb6nte"]
 
 [ext_resource type="Script" uid="uid://x08tdceyt2p8" path="res://Scripts/garbage.gd" id="1_672j4"]
-[ext_resource type="Texture2D" uid="uid://bosu7sck0nset" path="res://sprites/Selective_trashs/trashs.png" id="2_sly6a"]
+[ext_resource type="Texture2D" uid="uid://bj61osfh8esln" path="res://sprites/Selective_trashs/trashs.png" id="2_sly6a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sxbag"]
 size = Vector2(6, 13)

@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://boau3of2twk2j"]
+
+[ext_resource type="Script" uid="uid://x08tdceyt2p8" path="res://Scripts/garbage.gd" id="1_cxncl"]
+[ext_resource type="Texture2D" uid="uid://bj61osfh8esln" path="res://Sprites/Selective_trashs/trashs.png" id="1_jmthh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3hvm8"]
+size = Vector2(6, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxncl"]
+atlas = ExtResource("1_jmthh")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jmthh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxncl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Plastic" type="Area2D" unique_id=896404650]
+collision_layer = 32
+collision_mask = 2
+script = ExtResource("1_cxncl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1348213647]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_3hvm8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2008986934]
+sprite_frames = SubResource("SpriteFrames_jmthh")

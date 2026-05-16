@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bmjlppytlwc00"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=797537007]
+
+[node name="MobileControl" type="Control" parent="." unique_id=1514062339]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 400.0
+offset_bottom = 208.0
+
+[node name="BtnLeft" type="Button" parent="MobileControl" unique_id=39147979]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="BtnRight" type="Button" parent="MobileControl" unique_id=1688801875]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="BtnJump" type="Button" parent="MobileControl" unique_id=1974230774]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="BtnDuck" type="Button" parent="MobileControl" unique_id=486731530]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="BtnGrab" type="Button" parent="MobileControl" unique_id=1147921687]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

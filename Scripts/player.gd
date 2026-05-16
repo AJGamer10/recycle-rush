@@ -18,6 +18,7 @@ var trash_response = {
 	"PlasticTrashcan": "Plastic",
 	"OrganicTrashcan": "Organic"
 }
+var regex = RegEx.new()
 
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
@@ -53,6 +54,7 @@ var jump_buffer_timer = 0.0
 
 func _ready() -> void:
 	animation.frame_changed.connect(_on_animation_frame_changed)
+	$Hitbox.area_exited.connect(_on_hitbox_area_exited)
 	go_to_idle_state()
 
 func _physics_process(delta: float) -> void:
@@ -168,7 +170,7 @@ func idle_state(delta):
 		return
 	
 	if Input.is_action_just_pressed("agarrar"):
-		if item && item.get_parent() != trashcan:
+		if is_instance_valid(item) && item.get_parent() != trashcan:
 			go_to_grab_state()
 			return
 
@@ -197,6 +199,11 @@ func walk_state(delta):
 		exit_from_walk_state()
 		go_to_fall_state()
 		return
+	
+	if Input.is_action_just_pressed("agarrar"):
+		if is_instance_valid(item) && item.get_parent() != trashcan:
+			go_to_grab_state()
+			return
 
 func jump_state(delta):
 	move(delta)
@@ -300,7 +307,8 @@ func grab_state(delta):
 		jump_count = 1
 		
 	if Input.is_action_just_pressed("agarrar") && trashcan:
-		if trash_response[trashcan.name] == item.name.substr(0, 5):
+		regex.compile("\\d+")
+		if trash_response[trashcan.name] == regex.sub(item.name, "", true):
 			item.reparent(trashcan)
 			set_collision_mask_value(6, true)
 			go_to_idle_state()
@@ -361,10 +369,16 @@ func _on_hitbox_area_entered(area: Area2D) -> void:
 	elif area.is_in_group("LethalArea"):
 		hit_lethal_area()
 	elif area.is_in_group("Garbage"):
-		if not (area.get_parent().is_in_group("Trashcan")):
+		if area.get_parent() == get_parent():  # pai é a cena, ou seja, está "solto"
 			item = area
 	elif area.is_in_group("Trashcan"):
 		trashcan = area
+
+func _on_hitbox_area_exited(area: Area2D) -> void:
+	if area.is_in_group("Trashcan"):
+		trashcan = null
+	elif area.is_in_group("Garbage"):
+		item = null
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("LethalArea"):

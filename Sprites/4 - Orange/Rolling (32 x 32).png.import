@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcqxu3tpvgte5"
-path="res://.godot/imported/Jumping (32 x 32).png-2fc59ef98d75cbe1b03d5ae76071833a.ctex"
+uid="uid://d23o406a53nso"
+path="res://.godot/imported/Rolling (32 x 32).png-7360b9300adafdaef575d047498089ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite Pack 6/4 - Orange/Jumping (32 x 32).png"
-dest_files=["res://.godot/imported/Jumping (32 x 32).png-2fc59ef98d75cbe1b03d5ae76071833a.ctex"]
+source_file="res://Sprites/4 - Orange/Rolling (32 x 32).png"
+dest_files=["res://.godot/imported/Rolling (32 x 32).png-7360b9300adafdaef575d047498089ee.ctex"]
 
 [params]
 

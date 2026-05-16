@@ -58,10 +58,10 @@ func go_to_hurt_state():
 	velocity = Vector2.ZERO
 	
 func walk_state(_delta):
-	if animation.frame == 3 or animation.frame == 4:
-		velocity.x = SPEED * direction
-	else:
-		velocity.x = 0
+	#if animation.frame == 3 or animation.frame == 4:
+	velocity.x = SPEED * direction
+	#else:
+		#velocity.x = 0
 	
 	if wall_detector.is_colliding():
 		scale.x *= -1

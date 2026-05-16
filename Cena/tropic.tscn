@@ -3,18 +3,20 @@
 [ext_resource type="PackedScene" uid="uid://muedv0cci7xi" path="res://Entities/player.tscn" id="1_chatn"]
 [ext_resource type="TileSet" uid="uid://bf1rabfwc81x2" path="res://Tiles/terrain.tres" id="2_byl8x"]
 [ext_resource type="TileSet" uid="uid://gwcm4isqst2p" path="res://Tiles/decoration.tres" id="3_qv1j8"]
-[ext_resource type="Texture2D" uid="uid://nhx4iqm57t5p" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/5 - Sky_color.png" id="4_byl8x"]
-[ext_resource type="Texture2D" uid="uid://bilxinn1my7pe" path="res://sprites/Selective_trashs/selective_trashs-80x32.png" id="4_qv1j8"]
-[ext_resource type="Texture2D" uid="uid://bosu7sck0nset" path="res://sprites/Selective_trashs/trashs.png" id="5_ibs7i"]
-[ext_resource type="Texture2D" uid="uid://fykpdfpw3lt5" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/4 - Floating_clouds.png" id="6_bgbev"]
-[ext_resource type="Texture2D" uid="uid://bhtyaae3yydmb" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/3 - Background_clouds.png" id="7_c1r7j"]
-[ext_resource type="Texture2D" uid="uid://ds3ggoqqsi1w4" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/1 - Waters_version_1.png" id="8_wg7ms"]
-[ext_resource type="Texture2D" uid="uid://deybaoj66edet" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/2 - Waters_version_2.png" id="9_ibs7i"]
+[ext_resource type="Texture2D" uid="uid://bsgvwcwttkl6v" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/5 - Sky_color.png" id="4_byl8x"]
+[ext_resource type="Texture2D" uid="uid://by7mb1ngeqggw" path="res://sprites/Selective_trashs/selective_trashs-80x32.png" id="4_qv1j8"]
+[ext_resource type="Texture2D" uid="uid://bj61osfh8esln" path="res://sprites/Selective_trashs/trashs.png" id="5_ibs7i"]
+[ext_resource type="Texture2D" uid="uid://cevn3xh0plkc1" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/4 - Floating_clouds.png" id="6_bgbev"]
+[ext_resource type="Texture2D" uid="uid://dgviwavepeg42" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/3 - Background_clouds.png" id="7_c1r7j"]
+[ext_resource type="Texture2D" uid="uid://bp6ic6hbg5cxn" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/1 - Waters_version_1.png" id="8_wg7ms"]
+[ext_resource type="Texture2D" uid="uid://byx2a01vk64gs" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/2 - Waters_version_2.png" id="9_ibs7i"]
 [ext_resource type="PackedScene" uid="uid://cw7ir2ipxgh5j" path="res://Entities/camera.tscn" id="11_hlfhi"]
 [ext_resource type="PackedScene" uid="uid://yj6ack46mdqm" path="res://Entities/level_end.tscn" id="12_ar0it"]
 [ext_resource type="PackedScene" uid="uid://chrtxqaol7lcm" path="res://Entities/skeleton.tscn" id="13_hp1s6"]
 [ext_resource type="PackedScene" uid="uid://djklg8tvb6nte" path="res://Entities/metal.tscn" id="14_rsfxa"]
 [ext_resource type="PackedScene" uid="uid://c3348jf6qmrtd" path="res://Entities/metal_trashcan.tscn" id="15_c1rl1"]
+[ext_resource type="PackedScene" uid="uid://d38rgf6ahcorf" path="res://Entities/plastic_trashcan.tscn" id="16_r3mu8"]
+[ext_resource type="PackedScene" uid="uid://boau3of2twk2j" path="res://Entities/plastic.tscn" id="17_komwj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hatqv"]
 texture = ExtResource("4_qv1j8")
@@ -166,9 +168,6 @@ position = Vector2(263, 150)
 [node name="Player" parent="." unique_id=600485038 instance=ExtResource("1_chatn")]
 position = Vector2(40, 164)
 
-[node name="Metal1" parent="." unique_id=1701970885 instance=ExtResource("14_rsfxa")]
-position = Vector2(75, 168)
-
 [node name="Metal" parent="." unique_id=416882974 instance=ExtResource("14_rsfxa")]
 position = Vector2(60, 165)
 
@@ -181,5 +180,11 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=4646849]
 position = Vector2(-10, -44)
 shape = SubResource("RectangleShape2D_c1rl1")
+
+[node name="PlasticTrashcan" parent="." unique_id=50986857 instance=ExtResource("16_r3mu8")]
+position = Vector2(394, 161)
+
+[node name="Plastic" parent="." unique_id=896404650 instance=ExtResource("17_komwj")]
+position = Vector2(288, 72)
 
 [editable path="LevelEnd"]

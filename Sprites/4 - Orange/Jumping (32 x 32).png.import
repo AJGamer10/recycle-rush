@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dncidyqxdsitn"
-path="res://.godot/imported/Falling (32 x 32).png-5464c944bed3af61283c04d5f7665193.ctex"
+uid="uid://dcqxu3tpvgte5"
+path="res://.godot/imported/Jumping (32 x 32).png-4c0c7e232df6ef879db6a7eacad1b363.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite Pack 6/4 - Orange/Falling (32 x 32).png"
-dest_files=["res://.godot/imported/Falling (32 x 32).png-5464c944bed3af61283c04d5f7665193.ctex"]
+source_file="res://Sprites/4 - Orange/Jumping (32 x 32).png"
+dest_files=["res://.godot/imported/Jumping (32 x 32).png-4c0c7e232df6ef879db6a7eacad1b363.ctex"]
 
 [params]
 
