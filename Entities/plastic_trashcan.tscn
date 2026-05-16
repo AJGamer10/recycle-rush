@@ -27,7 +27,7 @@ font = ExtResource("2_xkwkm")
 font_color = Color(0.022979883, 0.022979883, 0.022979883, 1)
 outline_color = Color(0.036233686, 0.030335423, 0.005397975, 1)
 
-[node name="PlasticTrashcan" type="Area2D" unique_id=50986857]
+[node name="PlasticTrashcan" type="Area2D" unique_id=50986857 groups=["Trashcan"]]
 collision_layer = 64
 collision_mask = 2
 script = ExtResource("1_fmjcy")

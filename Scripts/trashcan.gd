@@ -18,15 +18,14 @@ func _ready() -> void:
 		return
 	
 	var prefixo = search.get_string(1)
+	var master_node = get_parent().get_parent()
 	
 	# Procura lixos correspondentes na cena
-	for sibling in get_parent().get_children():
-		# Verifique para não incluir a si mesmo na iteração
-		if sibling == self:
-			continue
-			
-		if sibling.name == prefixo:
-			maxGarbage += 1
+	for node in master_node.get_children():
+		if node.name == "Garbages":
+			for garbage in node.get_children():
+				if garbage.name == prefixo:
+					maxGarbage += 1
 	
 	trash_count()
 

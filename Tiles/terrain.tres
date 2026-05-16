@@ -1,8 +1,8 @@
 [gd_resource type="TileSet" format=3 uid="uid://bf1rabfwc81x2"]
 
-[ext_resource type="Texture2D" uid="uid://cmnnws0urbir4" path="res://sprites/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_jeslv"]
-[ext_resource type="Texture2D" uid="uid://cdk641k81svnf" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="2_yq4vk"]
-[ext_resource type="Texture2D" uid="uid://bg1o606erg8xt" path="res://sprites/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png" id="3_yq4vk"]
+[ext_resource type="Texture2D" uid="uid://cmnnws0urbir4" path="res://Sprites/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_jeslv"]
+[ext_resource type="Texture2D" uid="uid://cdk641k81svnf" path="res://Sprites/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="2_yq4vk"]
+[ext_resource type="Texture2D" uid="uid://bg1o606erg8xt" path="res://Sprites/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png" id="3_yq4vk"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_yq4vk"]
 tile_data = PackedInt32Array(0, 589826, 3, 1, 655362, 3, 2, 786434, 3, 3, 851970, 3)

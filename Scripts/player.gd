@@ -92,6 +92,9 @@ func _physics_process(delta: float) -> void:
 		PlayerState.grab:
 			grab_state(delta)
 	
+	if status != PlayerState.grab:
+		_buscar_item_na_area()
+	
 	move_and_slide()
 
 func go_to_idle_state():
@@ -310,7 +313,10 @@ func grab_state(delta):
 		regex.compile("\\d+")
 		if trash_response[trashcan.name] == regex.sub(item.name, "", true):
 			item.reparent(trashcan)
+			item = null
 			set_collision_mask_value(6, true)
+			await get_tree().physics_frame
+			_buscar_item_na_area()
 			go_to_idle_state()
 			return
 
@@ -368,17 +374,12 @@ func _on_hitbox_area_entered(area: Area2D) -> void:
 		hit_enemy(area)
 	elif area.is_in_group("LethalArea"):
 		hit_lethal_area()
-	elif area.is_in_group("Garbage"):
-		if area.get_parent() == get_parent():  # pai é a cena, ou seja, está "solto"
-			item = area
 	elif area.is_in_group("Trashcan"):
 		trashcan = area
 
 func _on_hitbox_area_exited(area: Area2D) -> void:
 	if area.is_in_group("Trashcan"):
 		trashcan = null
-	elif area.is_in_group("Garbage"):
-		item = null
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("LethalArea"):
@@ -405,3 +406,12 @@ func _on_animation_frame_changed():
 		# ajusta os números conforme os frames da sua animação
 		if animation.frame in [1, 4]:
 			walk_audio.play()
+
+func _buscar_item_na_area() -> void:
+	item = null
+	print("overlapping: ", $Hitbox.get_overlapping_areas())
+	for area in $Hitbox.get_overlapping_areas():
+		print("  -> ", area.name, " | pai: ", area.get_parent().name, " | grupos: ", area.get_groups())
+		if area.is_in_group("Garbage") and area.get_parent().get_parent() == get_parent():
+			item = area
+			return

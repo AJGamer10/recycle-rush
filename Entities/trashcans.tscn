@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://rhfxi6we8ptq"]
+
+[ext_resource type="PackedScene" uid="uid://c3348jf6qmrtd" path="res://Entities/metal_trashcan.tscn" id="1_11rsy"]
+[ext_resource type="PackedScene" uid="uid://chpg8jia6eusk" path="res://Entities/paper_trashcan.tscn" id="2_cnub3"]
+[ext_resource type="PackedScene" uid="uid://c6b688o2mrf5k" path="res://Entities/glass_trashcan.tscn" id="3_cevjt"]
+[ext_resource type="PackedScene" uid="uid://bxivhm13v5p2k" path="res://Entities/organic_trashcan.tscn" id="4_qywbg"]
+[ext_resource type="PackedScene" uid="uid://d38rgf6ahcorf" path="res://Entities/plastic_trashcan.tscn" id="5_3omw0"]
+
+[node name="Trashcans" type="Node2D" unique_id=1910505945]
+
+[node name="MetalTrashcan" parent="." unique_id=425295741 instance=ExtResource("1_11rsy")]
+position = Vector2(16, 0)
+
+[node name="PaperTrashcan" parent="." unique_id=1356598041 instance=ExtResource("2_cnub3")]
+
+[node name="GlassTrashcan" parent="." unique_id=1854159564 instance=ExtResource("3_cevjt")]
+position = Vector2(-16, 0)
+
+[node name="OrganicTrashcan" parent="." unique_id=410509828 instance=ExtResource("4_qywbg")]
+position = Vector2(32, 0)
+
+[node name="PlasticTrashcan" parent="." unique_id=50986857 instance=ExtResource("5_3omw0")]
+position = Vector2(-32, 0)

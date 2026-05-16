@@ -13,12 +13,12 @@
 [ext_resource type="PackedScene" uid="uid://cw7ir2ipxgh5j" path="res://Entities/camera.tscn" id="11_hlfhi"]
 [ext_resource type="PackedScene" uid="uid://yj6ack46mdqm" path="res://Entities/level_end.tscn" id="12_ar0it"]
 [ext_resource type="PackedScene" uid="uid://chrtxqaol7lcm" path="res://Entities/orange.tscn" id="13_hp1s6"]
-[ext_resource type="PackedScene" uid="uid://rhfxi6we8ptq" path="res://Entities/trashcans.tscn" id="14_7vk2x"]
 [ext_resource type="PackedScene" uid="uid://djklg8tvb6nte" path="res://Entities/metal.tscn" id="14_rsfxa"]
+[ext_resource type="PackedScene" uid="uid://c3348jf6qmrtd" path="res://Entities/metal_trashcan.tscn" id="15_c1rl1"]
+[ext_resource type="PackedScene" uid="uid://d38rgf6ahcorf" path="res://Entities/plastic_trashcan.tscn" id="16_r3mu8"]
 [ext_resource type="PackedScene" uid="uid://boau3of2twk2j" path="res://Entities/plastic.tscn" id="17_komwj"]
-[ext_resource type="PackedScene" uid="uid://ci26pfr8s8o0k" path="res://Entities/paper.tscn" id="18_4tn40"]
 [ext_resource type="PackedScene" uid="uid://0m0ecir2jg24" path="res://Entities/glass.tscn" id="18_7vk2x"]
-[ext_resource type="PackedScene" uid="uid://b7mp81sqfhut8" path="res://Entities/organic.tscn" id="19_fe6js"]
+[ext_resource type="PackedScene" uid="uid://c6b688o2mrf5k" path="res://Entities/glass_trashcan.tscn" id="19_4tn40"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hatqv"]
 texture = ExtResource("4_qv1j8")
@@ -170,6 +170,12 @@ position = Vector2(263, 150)
 [node name="Player" parent="." unique_id=600485038 instance=ExtResource("1_chatn")]
 position = Vector2(319, 69)
 
+[node name="Metal" parent="." unique_id=416882974 instance=ExtResource("14_rsfxa")]
+position = Vector2(288, -10)
+
+[node name="MetalTrashcan" parent="." unique_id=425295741 instance=ExtResource("15_c1rl1")]
+position = Vector2(442, 161)
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1801763174]
 collision_mask = 2
 
@@ -177,24 +183,16 @@ collision_mask = 2
 position = Vector2(-10, -44)
 shape = SubResource("RectangleShape2D_c1rl1")
 
-[node name="Trashcans" parent="." unique_id=1910505945 instance=ExtResource("14_7vk2x")]
-position = Vector2(400, 162)
+[node name="PlasticTrashcan" parent="." unique_id=50986857 instance=ExtResource("16_r3mu8")]
+position = Vector2(394, 161)
 
-[node name="Garbages" type="Node" parent="." unique_id=1229420102]
-
-[node name="Glass" parent="Garbages" unique_id=2011499631 instance=ExtResource("18_7vk2x")]
-position = Vector2(356, 24)
-
-[node name="Plastic" parent="Garbages" unique_id=896404650 instance=ExtResource("17_komwj")]
+[node name="Plastic" parent="." unique_id=896404650 instance=ExtResource("17_komwj")]
 position = Vector2(288, 72)
 
-[node name="Metal" parent="Garbages" unique_id=416882974 instance=ExtResource("14_rsfxa")]
-position = Vector2(288, -10)
+[node name="Glass" parent="." unique_id=2011499631 instance=ExtResource("18_7vk2x")]
+position = Vector2(356, 24)
 
-[node name="Paper" parent="Garbages" unique_id=1727163128 instance=ExtResource("18_4tn40")]
-position = Vector2(323, 121)
-
-[node name="Organic" parent="Garbages" unique_id=43606649 instance=ExtResource("19_fe6js")]
-position = Vector2(348, 119)
+[node name="GlassTrashcan" parent="." unique_id=1356598041 instance=ExtResource("19_4tn40")]
+position = Vector2(410, 161)
 
 [editable path="LevelEnd"]
