@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d23o406a53nso"
-path="res://.godot/imported/Rolling (32 x 32).png-cd09d3bcd0efe4ca048be2273276c000.ctex"
+path="res://.godot/imported/Rolling (32 x 32).png-dcc9f9ebc552f0796e29e4d80025aaf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite Pack 6/4 - Orange/Rolling (32 x 32).png"
-dest_files=["res://.godot/imported/Rolling (32 x 32).png-cd09d3bcd0efe4ca048be2273276c000.ctex"]
+source_file="res://sprites/Sprite Pack 6/4 - Orange/Rolling (32 x 32).png"
+dest_files=["res://.godot/imported/Rolling (32 x 32).png-dcc9f9ebc552f0796e29e4d80025aaf2.ctex"]
 
 [params]
 

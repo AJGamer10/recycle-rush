@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7t8cr77jdpkw"
-path="res://.godot/imported/Smacked (32 x 32).png-3022f1057107e1a409e625115e7b26ad.ctex"
+path="res://.godot/imported/Smacked (32 x 32).png-1a876353f8a924daaef627b9ebaee928.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite Pack 6/4 - Orange/Smacked (32 x 32).png"
-dest_files=["res://.godot/imported/Smacked (32 x 32).png-3022f1057107e1a409e625115e7b26ad.ctex"]
+source_file="res://sprites/Sprite Pack 6/4 - Orange/Smacked (32 x 32).png"
+dest_files=["res://.godot/imported/Smacked (32 x 32).png-1a876353f8a924daaef627b9ebaee928.ctex"]
 
 [params]
 

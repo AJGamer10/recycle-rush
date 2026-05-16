@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://g137q821mxqf"
-path="res://.godot/imported/_Complete_static_BG_(288 x 208).png-c77e4815c482818e27c8d4aec46f21fe.ctex"
+path="res://.godot/imported/_Complete_static_BG_(288 x 208).png-e14c3cb2509bc97035b0575a29e90d97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Seasonal Tilesets/3 - Tropics/Background parts/_Complete_static_BG_(288 x 208).png"
-dest_files=["res://.godot/imported/_Complete_static_BG_(288 x 208).png-c77e4815c482818e27c8d4aec46f21fe.ctex"]
+source_file="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/_Complete_static_BG_(288 x 208).png"
+dest_files=["res://.godot/imported/_Complete_static_BG_(288 x 208).png-e14c3cb2509bc97035b0575a29e90d97.ctex"]
 
 [params]
 

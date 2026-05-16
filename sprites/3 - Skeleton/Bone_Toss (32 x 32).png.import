@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3x7tc72f6wnr"
-path="res://.godot/imported/Bone_Toss (32 x 32).png-2472f9ce84be3caa47b3bd41fd9ffd4c.ctex"
+path="res://.godot/imported/Bone_Toss (32 x 32).png-2bbd68b66631cf69e6f0e08a87dda9b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/3 - Skeleton/Bone_Toss (32 x 32).png"
-dest_files=["res://.godot/imported/Bone_Toss (32 x 32).png-2472f9ce84be3caa47b3bd41fd9ffd4c.ctex"]
+source_file="res://sprites/3 - Skeleton/Bone_Toss (32 x 32).png"
+dest_files=["res://.godot/imported/Bone_Toss (32 x 32).png-2bbd68b66631cf69e6f0e08a87dda9b0.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dahquqme3ina7"
-path="res://.godot/imported/Squished (32 x 32).png-bd46f4c902f175feaa351a1b2ae9c00f.ctex"
+path="res://.godot/imported/Squished (32 x 32).png-d9bfe6b3bd1598a3390db15799adc53d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite Pack 6/4 - Orange/Squished (32 x 32).png"
-dest_files=["res://.godot/imported/Squished (32 x 32).png-bd46f4c902f175feaa351a1b2ae9c00f.ctex"]
+source_file="res://sprites/Sprite Pack 6/4 - Orange/Squished (32 x 32).png"
+dest_files=["res://.godot/imported/Squished (32 x 32).png-d9bfe6b3bd1598a3390db15799adc53d.ctex"]
 
 [params]
 
