@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://x08tdceyt2p8" path="res://Scripts/garbage.gd" id="1_qqavf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qqavf"]
-size = Vector2(11, 12)
+size = Vector2(6, 15)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1hwl2"]
 atlas = ExtResource("1_nigod")

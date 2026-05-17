@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://blfc5gt03n5f1"]
 
+[ext_resource type="Script" uid="uid://cniepmdwlnjjw" path="res://Scripts/forest.gd" id="1_fnlvq"]
 [ext_resource type="PackedScene" uid="uid://muedv0cci7xi" path="res://Entities/player.tscn" id="1_m0u81"]
 [ext_resource type="TileSet" uid="uid://bf1rabfwc81x2" path="res://Tiles/terrain.tres" id="2_ywpoi"]
 [ext_resource type="TileSet" uid="uid://gwcm4isqst2p" path="res://Tiles/decoration.tres" id="3_1jovp"]
@@ -20,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://ci26pfr8s8o0k" path="res://Entities/paper.tscn" id="17_fnlvq"]
 [ext_resource type="PackedScene" uid="uid://b7mp81sqfhut8" path="res://Entities/organic.tscn" id="18_q120m"]
 [ext_resource type="PackedScene" uid="uid://boau3of2twk2j" path="res://Entities/plastic.tscn" id="19_3meee"]
+[ext_resource type="AudioStream" uid="uid://bsm18qpj6o2qf" path="res://Soundtrack/Songs/toby-fox-UNDERTALE-Soundtrack-05-Ruins.mp3" id="22_q120m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1jovp"]
 texture = ExtResource("9_tkyun")
@@ -71,6 +73,7 @@ size = Vector2(20, 192)
 size = Vector2(20, 192)
 
 [node name="Forest" type="Node2D" unique_id=585177061]
+script = ExtResource("1_fnlvq")
 metadata/_edit_vertical_guides_ = [780.0]
 
 [node name="TileMaps" type="Node" parent="." unique_id=508481152]
@@ -97,7 +100,7 @@ tile_set = ExtResource("4_dgrp2")
 [node name="Parallax" type="Node2D" parent="." unique_id=538117021]
 
 [node name="6" type="Parallax2D" parent="Parallax" unique_id=466102464]
-scroll_scale = Vector2(0.1, 0.1)
+scroll_scale = Vector2(0.1, 0)
 repeat_size = Vector2(288, 0)
 
 [node name="6" type="Sprite2D" parent="Parallax/6" unique_id=733308440]
@@ -152,7 +155,7 @@ region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
 
 [node name="1" type="Parallax2D" parent="Parallax" unique_id=502820973]
-scroll_scale = Vector2(1.2, 1.2)
+scroll_scale = Vector2(1.2, 0)
 repeat_size = Vector2(288, 0)
 
 [node name="1" type="Sprite2D" parent="Parallax/1" unique_id=74635315]
@@ -167,17 +170,15 @@ position = Vector2(14, 184)
 
 [node name="Camera" parent="." unique_id=2051687981 instance=ExtResource("9_6okxi")]
 position = Vector2(14, 184)
-limit_left = -17
 limit_top = -9
 limit_right = 2598
-limit_bottom = 445
 
 [node name="LevelEnd" parent="." unique_id=2011986027 instance=ExtResource("12_2kvdh")]
 position = Vector2(784, 178)
 next_level = "tropic"
 
 [node name="CollisionShape2D" parent="LevelEnd" index="0" unique_id=1217213634]
-position = Vector2(1031, 112)
+position = Vector2(1113, 232)
 shape = SubResource("RectangleShape2D_ihqr4")
 
 [node name="Skeleton2" parent="." unique_id=429219196 instance=ExtResource("13_ihqr4")]
@@ -211,5 +212,8 @@ position = Vector2(2552, 131)
 
 [node name="Metal" parent="Node" unique_id=1701970885 instance=ExtResource("5_v2mfx")]
 position = Vector2(1376, 118)
+
+[node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=393271713]
+stream = ExtResource("22_q120m")
 
 [editable path="LevelEnd"]
