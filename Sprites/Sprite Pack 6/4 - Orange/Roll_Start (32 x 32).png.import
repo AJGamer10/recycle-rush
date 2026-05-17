@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l6rbvmnirtf5"
-path="res://.godot/imported/Roll_Start (32 x 32).png-06f7a5fcea1522c30da7e666e603486d.ctex"
+path="res://.godot/imported/Roll_Start (32 x 32).png-624a5fb5d38080b1694e479a23bb03da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/4 - Orange/Roll_Start (32 x 32).png"
-dest_files=["res://.godot/imported/Roll_Start (32 x 32).png-06f7a5fcea1522c30da7e666e603486d.ctex"]
+source_file="res://Sprites/Sprite Pack 6/4 - Orange/Roll_Start (32 x 32).png"
+dest_files=["res://.godot/imported/Roll_Start (32 x 32).png-624a5fb5d38080b1694e479a23bb03da.ctex"]
 
 [params]
 

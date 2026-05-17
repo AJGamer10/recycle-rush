@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcqxu3tpvgte5"
-path="res://.godot/imported/Jumping (32 x 32).png-4c0c7e232df6ef879db6a7eacad1b363.ctex"
+path="res://.godot/imported/Jumping (32 x 32).png-2fc59ef98d75cbe1b03d5ae76071833a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/4 - Orange/Jumping (32 x 32).png"
-dest_files=["res://.godot/imported/Jumping (32 x 32).png-4c0c7e232df6ef879db6a7eacad1b363.ctex"]
+source_file="res://Sprites/Sprite Pack 6/4 - Orange/Jumping (32 x 32).png"
+dest_files=["res://.godot/imported/Jumping (32 x 32).png-2fc59ef98d75cbe1b03d5ae76071833a.ctex"]
 
 [params]
 

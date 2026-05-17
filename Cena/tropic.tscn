@@ -12,7 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://byx2a01vk64gs" path="res://Sprites/Seasonal Tilesets/3 - Tropics/Background parts/2 - Waters_version_2.png" id="9_ibs7i"]
 [ext_resource type="PackedScene" uid="uid://cw7ir2ipxgh5j" path="res://Entities/camera.tscn" id="11_hlfhi"]
 [ext_resource type="PackedScene" uid="uid://yj6ack46mdqm" path="res://Entities/level_end.tscn" id="12_ar0it"]
-[ext_resource type="PackedScene" uid="uid://chrtxqaol7lcm" path="res://Entities/orange.tscn" id="13_hp1s6"]
 [ext_resource type="PackedScene" uid="uid://rhfxi6we8ptq" path="res://Entities/trashcans.tscn" id="14_7vk2x"]
 [ext_resource type="PackedScene" uid="uid://djklg8tvb6nte" path="res://Entities/metal.tscn" id="14_rsfxa"]
 [ext_resource type="PackedScene" uid="uid://boau3of2twk2j" path="res://Entities/plastic.tscn" id="17_komwj"]
@@ -163,9 +162,6 @@ next_level = "forest"
 [node name="CollisionShape2D" parent="LevelEnd" index="0" unique_id=1217213634]
 position = Vector2(24, -41)
 shape = SubResource("RectangleShape2D_ar0it")
-
-[node name="Skeleton" parent="." unique_id=2027644958 instance=ExtResource("13_hp1s6")]
-position = Vector2(263, 150)
 
 [node name="Player" parent="." unique_id=600485038 instance=ExtResource("1_chatn")]
 position = Vector2(319, 69)

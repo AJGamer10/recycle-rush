@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dncidyqxdsitn"
-path="res://.godot/imported/Falling (32 x 32).png-72137676de83060c86fb3d255767af6f.ctex"
+path="res://.godot/imported/Falling (32 x 32).png-5464c944bed3af61283c04d5f7665193.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/4 - Orange/Falling (32 x 32).png"
-dest_files=["res://.godot/imported/Falling (32 x 32).png-72137676de83060c86fb3d255767af6f.ctex"]
+source_file="res://Sprites/Sprite Pack 6/4 - Orange/Falling (32 x 32).png"
+dest_files=["res://.godot/imported/Falling (32 x 32).png-5464c944bed3af61283c04d5f7665193.ctex"]
 
 [params]
 
