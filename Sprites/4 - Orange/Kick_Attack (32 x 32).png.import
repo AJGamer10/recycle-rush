@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cba2v7gm2h8cl"
-path="res://.godot/imported/Hurt (32 x 32).png-9d51e589d40ccf09eb3b0bb4c5bba250.ctex"
+uid="uid://cwpqiuqnsmgku"
+path="res://.godot/imported/Kick_Attack (32 x 32).png-9ee1f164db65a381d699f65c7cc70ec7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite Pack 6/4 - Orange/Hurt (32 x 32).png"
-dest_files=["res://.godot/imported/Hurt (32 x 32).png-9d51e589d40ccf09eb3b0bb4c5bba250.ctex"]
+source_file="res://Sprites/4 - Orange/Kick_Attack (32 x 32).png"
+dest_files=["res://.godot/imported/Kick_Attack (32 x 32).png-9ee1f164db65a381d699f65c7cc70ec7.ctex"]
 
 [params]
 

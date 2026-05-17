@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7t8cr77jdpkw"
-path="res://.godot/imported/Smacked (32 x 32).png-3022f1057107e1a409e625115e7b26ad.ctex"
+uid="uid://bow7r1vv1uwwb"
+path="res://.godot/imported/Standing (32 x 32).png-935acc42f03bcb15fc66aaaa6529ea89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite Pack 6/4 - Orange/Smacked (32 x 32).png"
-dest_files=["res://.godot/imported/Smacked (32 x 32).png-3022f1057107e1a409e625115e7b26ad.ctex"]
+source_file="res://Sprites/4 - Orange/Standing (32 x 32).png"
+dest_files=["res://.godot/imported/Standing (32 x 32).png-935acc42f03bcb15fc66aaaa6529ea89.ctex"]
 
 [params]
 
