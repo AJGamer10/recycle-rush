@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt4l6a1tf33n1"
-path="res://.godot/imported/Grassland_entities (16 x 16).png-8fd95a11dfceb2c13bbdbaae2bfa1f27.ctex"
+path="res://.godot/imported/Grassland_entities (16 x 16).png-b57e90954f1951d6c1611124ead604ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png"
-dest_files=["res://.godot/imported/Grassland_entities (16 x 16).png-8fd95a11dfceb2c13bbdbaae2bfa1f27.ctex"]
+source_file="res://Sprites/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png"
+dest_files=["res://.godot/imported/Grassland_entities (16 x 16).png-b57e90954f1951d6c1611124ead604ad.ctex"]
 
 [params]
 

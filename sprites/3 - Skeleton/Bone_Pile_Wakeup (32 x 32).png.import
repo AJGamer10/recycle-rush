@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uj31wunwk685"
-path="res://.godot/imported/Bone_Pile_Wakeup (32 x 32).png-e564eb49fc704e3d19acd7caf3952967.ctex"
+path="res://.godot/imported/Bone_Pile_Wakeup (32 x 32).png-9f4a4e79c1515f06fec626fa347bd22e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/3 - Skeleton/Bone_Pile_Wakeup (32 x 32).png"
-dest_files=["res://.godot/imported/Bone_Pile_Wakeup (32 x 32).png-e564eb49fc704e3d19acd7caf3952967.ctex"]
+source_file="res://Sprites/3 - Skeleton/Bone_Pile_Wakeup (32 x 32).png"
+dest_files=["res://.godot/imported/Bone_Pile_Wakeup (32 x 32).png-9f4a4e79c1515f06fec626fa347bd22e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clcaf63jcbm4o"
-path="res://.godot/imported/Water_frames (16 x 32).png-f51df8df4a5774c74b9548e2a9018f4a.ctex"
+path="res://.godot/imported/Water_frames (16 x 32).png-88d181c79e225541e62f3d00b85b3fe1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png"
-dest_files=["res://.godot/imported/Water_frames (16 x 32).png-f51df8df4a5774c74b9548e2a9018f4a.ctex"]
+source_file="res://Sprites/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png"
+dest_files=["res://.godot/imported/Water_frames (16 x 32).png-88d181c79e225541e62f3d00b85b3fe1.ctex"]
 
 [params]
 
