@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxdm2i63j41hg"
-path="res://.godot/imported/Flying_Forward_Movement (32 x 32).png-7f27a9824d33753d639a775fb5282f91.ctex"
+path="res://.godot/imported/Flying_Forward_Movement (32 x 32).png-137c445fcd6b9a96a7c818e56f20d9ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/2 - Fairy/Flying_Forward_Movement (32 x 32).png"
-dest_files=["res://.godot/imported/Flying_Forward_Movement (32 x 32).png-7f27a9824d33753d639a775fb5282f91.ctex"]
+source_file="res://Sprites/Sprite Pack 6/2 - Fairy/Flying_Forward_Movement (32 x 32).png"
+dest_files=["res://.godot/imported/Flying_Forward_Movement (32 x 32).png-137c445fcd6b9a96a7c818e56f20d9ed.ctex"]
 
 [params]
 

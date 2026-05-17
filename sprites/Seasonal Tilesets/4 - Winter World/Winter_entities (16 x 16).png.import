@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvjdw56bh4bmd"
-path="res://.godot/imported/Winter_entities (16 x 16).png-3f29123862baf00377025427b8a00906.ctex"
+path="res://.godot/imported/Winter_entities (16 x 16).png-09c20959ef67acdf49c7f2604caa15da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Seasonal Tilesets/4 - Winter World/Winter_entities (16 x 16).png"
-dest_files=["res://.godot/imported/Winter_entities (16 x 16).png-3f29123862baf00377025427b8a00906.ctex"]
+source_file="res://Sprites/Seasonal Tilesets/4 - Winter World/Winter_entities (16 x 16).png"
+dest_files=["res://.godot/imported/Winter_entities (16 x 16).png-09c20959ef67acdf49c7f2604caa15da.ctex"]
 
 [params]
 

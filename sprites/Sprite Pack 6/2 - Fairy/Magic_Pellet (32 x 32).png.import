@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b38bfim3r35ef"
-path="res://.godot/imported/Magic_Pellet (32 x 32).png-e293358cf9eeec2f3dae74dd8b6d8847.ctex"
+path="res://.godot/imported/Magic_Pellet (32 x 32).png-c16c74e555bd6e6cc25cc8aa1d7f1d60.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/2 - Fairy/Magic_Pellet (32 x 32).png"
-dest_files=["res://.godot/imported/Magic_Pellet (32 x 32).png-e293358cf9eeec2f3dae74dd8b6d8847.ctex"]
+source_file="res://Sprites/Sprite Pack 6/2 - Fairy/Magic_Pellet (32 x 32).png"
+dest_files=["res://.godot/imported/Magic_Pellet (32 x 32).png-c16c74e555bd6e6cc25cc8aa1d7f1d60.ctex"]
 
 [params]
 

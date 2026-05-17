@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://chrtxqaol7lcm"]
 
 [ext_resource type="Script" uid="uid://dai82bhnywyda" path="res://Scripts/orange.gd" id="1_l2ijo"]
-[ext_resource type="Texture2D" uid="uid://cwpqiuqnsmgku" path="res://Sprites/4 - Orange/Kick_Attack (32 x 32).png" id="2_loyms"]
-[ext_resource type="Texture2D" uid="uid://dahquqme3ina7" path="res://Sprites/4 - Orange/Squished (32 x 32).png" id="3_qt08k"]
-[ext_resource type="Texture2D" uid="uid://jfe7muhluykh" path="res://Sprites/4 - Orange/Walking (32 x 32).png" id="4_uvcil"]
+[ext_resource type="Texture2D" uid="uid://c73ykhlhbdcgu" path="res://Sprites/4 - Orange/Kick_Attack (32 x 32).png" id="2_loyms"]
+[ext_resource type="Texture2D" uid="uid://bliv1rdt1qtq0" path="res://Sprites/4 - Orange/Squished (32 x 32).png" id="3_qt08k"]
+[ext_resource type="Texture2D" uid="uid://b5f46byusw7tw" path="res://Sprites/4 - Orange/Walking (32 x 32).png" id="4_uvcil"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onftj"]
 atlas = ExtResource("2_loyms")

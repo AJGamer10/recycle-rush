@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3ts5quguji0n"
-path="res://.godot/imported/Idle_Ground (32 x 32).png-e2db8a71e0d65cebdbe7747925c92346.ctex"
+path="res://.godot/imported/Idle_Ground (32 x 32).png-9e79ddafe1b8ea79d5067f79ee4bbfab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/2 - Fairy/Idle_Ground (32 x 32).png"
-dest_files=["res://.godot/imported/Idle_Ground (32 x 32).png-e2db8a71e0d65cebdbe7747925c92346.ctex"]
+source_file="res://Sprites/Sprite Pack 6/2 - Fairy/Idle_Ground (32 x 32).png"
+dest_files=["res://.godot/imported/Idle_Ground (32 x 32).png-9e79ddafe1b8ea79d5067f79ee4bbfab.ctex"]
 
 [params]
 

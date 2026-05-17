@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw4ph0fxs7wjx"
-path="res://.godot/imported/Crumbling_Into_Bone_Pile (32 x 32).png-f613511dff58603fef7ec91cb1c38be0.ctex"
+path="res://.godot/imported/Crumbling_Into_Bone_Pile (32 x 32).png-d4b0b686d8ad79faee64d31892f9886f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/3 - Skeleton/Crumbling_Into_Bone_Pile (32 x 32).png"
-dest_files=["res://.godot/imported/Crumbling_Into_Bone_Pile (32 x 32).png-f613511dff58603fef7ec91cb1c38be0.ctex"]
+source_file="res://Sprites/3 - Skeleton/Crumbling_Into_Bone_Pile (32 x 32).png"
+dest_files=["res://.godot/imported/Crumbling_Into_Bone_Pile (32 x 32).png-d4b0b686d8ad79faee64d31892f9886f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cibo14vmlfigx"
-path="res://.godot/imported/Magic_Sparkle_Trail (32 x 32).png-487a7041f99179d300c78f06a0b2ea7c.ctex"
+path="res://.godot/imported/Magic_Sparkle_Trail (32 x 32).png-cd9c00005d5c8fdbe60be435ac412c14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Sprite Pack 6/2 - Fairy/Magic_Sparkle_Trail (32 x 32).png"
-dest_files=["res://.godot/imported/Magic_Sparkle_Trail (32 x 32).png-487a7041f99179d300c78f06a0b2ea7c.ctex"]
+source_file="res://Sprites/Sprite Pack 6/2 - Fairy/Magic_Sparkle_Trail (32 x 32).png"
+dest_files=["res://.godot/imported/Magic_Sparkle_Trail (32 x 32).png-cd9c00005d5c8fdbe60be435ac412c14.ctex"]
 
 [params]
 

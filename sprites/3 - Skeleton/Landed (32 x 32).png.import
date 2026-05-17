@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1ryeji4qgc7e"
-path="res://.godot/imported/Landed (32 x 32).png-d6ffb229b575f7369a65d6189ec5aca6.ctex"
+path="res://.godot/imported/Landed (32 x 32).png-12a20557dcecfc724c8187acdeb04766.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/3 - Skeleton/Landed (32 x 32).png"
-dest_files=["res://.godot/imported/Landed (32 x 32).png-d6ffb229b575f7369a65d6189ec5aca6.ctex"]
+source_file="res://Sprites/3 - Skeleton/Landed (32 x 32).png"
+dest_files=["res://.godot/imported/Landed (32 x 32).png-12a20557dcecfc724c8187acdeb04766.ctex"]
 
 [params]
 
