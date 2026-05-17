@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c3348jf6qmrtd"]
 
 [ext_resource type="Script" uid="uid://ruuhhq08abmt" path="res://Scripts/trashcan.gd" id="1_feos2"]
-[ext_resource type="Texture2D" uid="uid://by7mb1ngeqggw" path="res://sprites/Selective_trashs/selective_trashs-80x32.png" id="2_g4uv2"]
+[ext_resource type="Texture2D" uid="uid://by7mb1ngeqggw" path="res://Sprites/Selective_trashs/selective_trashs-80x32.png" id="2_g4uv2"]
 [ext_resource type="FontFile" uid="uid://c1bokt18am354" path="res://Fonts/DeterminationSansWeb.woff" id="3_sd5fj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pvvd8"]
@@ -47,5 +47,3 @@ offset_bottom = 9.0
 scale = Vector2(0.5229715, 0.45636368)
 label_settings = SubResource("LabelSettings_pvvd8")
 horizontal_alignment = 1
-
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
