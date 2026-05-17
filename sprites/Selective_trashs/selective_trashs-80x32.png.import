@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://by7mb1ngeqggw"
-path="res://.godot/imported/selective_trashs-80x32.png-bb1aa0721c7c2f805a9b2625b072f544.ctex"
+path="res://.godot/imported/selective_trashs-80x32.png-a2b33049ebc36d5bcf12f4c7ee488536.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Selective_trashs/selective_trashs-80x32.png"
-dest_files=["res://.godot/imported/selective_trashs-80x32.png-bb1aa0721c7c2f805a9b2625b072f544.ctex"]
+source_file="res://sprites/Selective_trashs/selective_trashs-80x32.png"
+dest_files=["res://.godot/imported/selective_trashs-80x32.png-a2b33049ebc36d5bcf12f4c7ee488536.ctex"]
 
 [params]
 

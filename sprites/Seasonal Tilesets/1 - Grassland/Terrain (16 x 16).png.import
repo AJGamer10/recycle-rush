@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmnnws0urbir4"
-path="res://.godot/imported/Terrain (16 x 16).png-25f27a21303373af935a9ea8736f2063.ctex"
+path="res://.godot/imported/Terrain (16 x 16).png-0b19f9c7f7e78df7ded206dcad8d839c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png"
-dest_files=["res://.godot/imported/Terrain (16 x 16).png-25f27a21303373af935a9ea8736f2063.ctex"]
+source_file="res://sprites/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png"
+dest_files=["res://.godot/imported/Terrain (16 x 16).png-0b19f9c7f7e78df7ded206dcad8d839c.ctex"]
 
 [params]
 

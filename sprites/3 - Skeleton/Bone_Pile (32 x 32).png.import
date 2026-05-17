@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bghu4plv84kp4"
-path="res://.godot/imported/Bone_Pile (32 x 32).png-5b6ed2dd5f050898b09586185a86b55e.ctex"
+path="res://.godot/imported/Bone_Pile (32 x 32).png-ed5d141acae7e9ca5b1b1ff4386567b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/3 - Skeleton/Bone_Pile (32 x 32).png"
-dest_files=["res://.godot/imported/Bone_Pile (32 x 32).png-5b6ed2dd5f050898b09586185a86b55e.ctex"]
+source_file="res://sprites/3 - Skeleton/Bone_Pile (32 x 32).png"
+dest_files=["res://.godot/imported/Bone_Pile (32 x 32).png-ed5d141acae7e9ca5b1b1ff4386567b0.ctex"]
 
 [params]
 
