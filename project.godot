@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Recycle Rush"
-run/main_scene="uid://fl35u84lcoe7"
+run/main_scene="uid://blfc5gt03n5f1"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
