@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpyhi13r4y5du"
-path="res://.godot/imported/Bubbling_Oil_frames (16 x 32).png-cae72093e9f69196cf2f3283565db324.ctex"
+path="res://.godot/imported/Bubbling_Oil_frames (16 x 32).png-e73986bdf6bdc767ea22d3b0c9be92e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Seasonal Tilesets/5 - Misc. universal tiles/Bubbling_Oil_frames (16 x 32).png"
-dest_files=["res://.godot/imported/Bubbling_Oil_frames (16 x 32).png-cae72093e9f69196cf2f3283565db324.ctex"]
+source_file="res://sprites/Seasonal Tilesets/5 - Misc. universal tiles/Bubbling_Oil_frames (16 x 32).png"
+dest_files=["res://.godot/imported/Bubbling_Oil_frames (16 x 32).png-e73986bdf6bdc767ea22d3b0c9be92e9.ctex"]
 
 [params]
 
