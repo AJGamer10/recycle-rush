@@ -166,7 +166,7 @@ region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
 
 [node name="Player" parent="." unique_id=600485038 instance=ExtResource("1_m0u81")]
-position = Vector2(2361, 118)
+position = Vector2(69, 163)
 
 [node name="Camera" parent="." unique_id=2051687981 instance=ExtResource("9_6okxi")]
 position = Vector2(14, 184)
