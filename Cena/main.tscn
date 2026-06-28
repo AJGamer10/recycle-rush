@@ -5,6 +5,7 @@
 [ext_resource type="TileSet" uid="uid://gwcm4isqst2p" path="res://Tiles/decoration.tres" id="3_skhdm"]
 
 [node name="Fase1" type="Node2D" unique_id=258508842]
+position = Vector2(-86, 210)
 
 [node name="Player" parent="." unique_id=600485038 instance=ExtResource("1_nnmrw")]
 position = Vector2(33, 140)
